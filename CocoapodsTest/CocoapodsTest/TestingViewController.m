@@ -83,7 +83,7 @@
 }
 
 - (void)didRequestFailWithError:(NSError *)error {
-    DLog(@"Request Failed. %@", [error localizedDescription]);
+    DLog(@"Request JSON Failed. %@", [error localizedDescription]);
 }
 
 #pragma mark -
@@ -93,7 +93,7 @@
 }
 
 - (void)didSaveFailWithError:(NSError *)error {
-    DLog(@"Save Failed. %@", [error localizedDescription]);
+    DLog(@"Save to CoreData Failed. %@", [error localizedDescription]);
 }
 
 - (void)didFetchSuccessWithData:(NSArray*)data {
@@ -102,7 +102,7 @@
 }
 
 - (void)didFetchFailWithError:(NSError*)error {
-    DLog(@"Fetch Failed. %@", [error localizedDescription]);
+    DLog(@"Fetch CoreData content Failed. %@", [error localizedDescription]);
 }
 
 #pragma mark -
@@ -120,7 +120,7 @@
 }
 
 - (void)downloadImageDidFailWithError:(NSError*)error {
-    DLog(@"Download Failed. %@", [error localizedDescription]);
+    DLog(@"Download Image Failed. %@", [error localizedDescription]);
 }
 
 #pragma mark -
