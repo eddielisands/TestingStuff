@@ -130,8 +130,7 @@
                     android:background="@drawable/dashboard_button_bg"
                     android:onClick="onClickSessions"
                     android:padding="10dp"
-                    android:src="@drawable/dashboard_session"
-                    android:textAlignment="center" />
+                    android:src="@drawable/dashboard_session" />
 
                 <TextView
                     android:layout_width="wrap_content"
