@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Start - Theme -->
+
+    <style name="Theme" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- END - Theme -->
+
+
+    <!-- Start - Splash Screen -->
+
+    <style name="Theme.SplashScreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/SplashScreen.Animations</item>
+        <item name="android:gravity">fill</item>
+    </style>
+
+    <style name="SplashScreen.Animations" parent="@android:Animation">
+        <item name="android:windowEnterAnimation">@anim/splash_appear</item>
+        <item name="android:windowExitAnimation">@anim/splash_disappear</item>
+    </style>
+
+    <!-- END - Splash Screen -->
+
+
+    <!-- START - Default Activity, List, List Item Layouts -->
+
+    <style name="DefaultParentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/lightgray</item>
+    </style>
+
+    <style name="DefaultItemLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DefaultList">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@color/divider</item>
+        <item name="android:dividerHeight">@dimen/list_divider_height</item>
+    </style>
+
+    <style name="DefaultDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- END - Default Activity & List Item Layouts -->
+
+
+    <!-- START - Divider -->
+
+    <style name="Divider" parent="@style/DefaultDivider">
+        <item name="android:layout_height">@dimen/divider_height</item>
+    </style>
+
+    <style name="SmallDivider" parent="@style/DefaultDivider">
+        <item name="android:layout_height">@dimen/list_divider_height</item>
+    </style>
+
+    <!-- END - Divider -->
+
+
+    <!-- START - Twitter Styles -->
+
+    <style name="TweetText" parent="android:Widget.TextView">
+        <item name="android:autoLink">all</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorLink">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TweetDate" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text2</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TweetAuthor" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TweetImg">
+        <item name="android:paddingBottom">@dimen/padding_size_default</item>
+        <item name="android:paddingLeft">@dimen/padding_size_default</item>
+        <item name="android:paddingTop">@dimen/padding_size_default</item>
+        <item name="android:layout_width">@dimen/tweet_img_w</item>
+        <item name="android:layout_height">@dimen/tweet_img_h</item>
+    </style>
+
+    <!-- <style name="ConferenceImage"> -->
+    <!-- <item name="android:layout_width">match_parent</item> -->
+    <!-- <item name="android:layout_height">184px</item> -->
+    <!-- <item name="android:padding">@dimen/padding_size_x4</item> -->
+    <!-- </style> -->
+
+    <style name="TweetLoadLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tweet_img_h</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="TweetLoadText">
+        <item name="android:text">@string/twitter_dia_load_tweets</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/tweet_img_h</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TweetLoadImage">
+        <item name="android:src">@drawable/actionbar_sync_default</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- END - Twitter Styles -->
+
+
+    <!-- START - Dashboard Styles -->
+
+    <style name="DashboardLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">@dimen/padding_size_x2</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="DashboardBanner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/backgroundcolor</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="CountdownText">
+        <item name="android:padding">@dimen/padding_size_default</item>
+        <item name="android:paddingTop">@dimen/padding_size_x2</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">@dimen/padding_size_default</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Advertisment">
+        <item name="android:layout_height">@dimen/advertisment_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/background_end</item>
+    </style>
+
+    <!-- END - Dashboard Styles -->
+
+
+    <!-- START - Speaker Item -->
+
+    <style name="SpeakerCompany">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:paddingLeft">@dimen/padding_size_default</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/text3</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+    </style>
+
+    <style name="SpeakerImg">
+        <item name="android:paddingBottom">@dimen/padding_size_default</item>
+        <item name="android:paddingLeft">@dimen/padding_size_default</item>
+        <item name="android:paddingTop">@dimen/padding_size_default</item>
+        <item name="android:layout_width">@dimen/speaker_img_w</item>
+        <item name="android:layout_height">@dimen/speaker_img_h</item>
+    </style>
+
+    <style name="SpeakerName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/padding_size_default</item>
+    </style>
+
+    <!-- END - Speaker Item -->
+
+
+    <!-- START - Session Item -->
+
+    <style name="SessionIcon">
+        <item name="android:paddingBottom">@dimen/padding_size_default</item>
+        <item name="android:paddingLeft">@dimen/padding_size_default</item>
+        <item name="android:paddingTop">@dimen/padding_size_default</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/session_icon_w</item>
+        <item name="android:layout_height">@dimen/session_icon_h</item>
+    </style>
+
+    <style name="SessionTitle">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/session_item_height</item>
+        <!-- <item name="android:gravity">center_vertical</item> -->
+        <item name="android:paddingLeft">@dimen/padding_size_x2</item>
+    </style>
+
+    <style name="TrackColorStrip">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/track_color_strip_width</item>
+        <item name="android:paddingRight">@dimen/padding_size_default</item>
+    </style>
+
+    <style name="FavoriteButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/padding_size_x2</item>
+        <item name="android:textOn">""</item>
+        <item name="android:textOff">""</item>
+        <item name="android:background">@drawable/star_selector</item>
+    </style>
+
+    <style name="TimeRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_size_x2</item>
+        <item name="android:background">@color/background_end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/lightergray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <!-- END - Session Item -->
+
+
+    <!-- START - Detail Information Styles -->
+
+    <style name="SessionFullTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:padding">@dimen/padding_size_default</item>
+    </style>
+
+    <style name="DetailListTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:paddingBottom">@dimen/padding_size_default</item>
+        <item name="android:paddingTop">@dimen/padding_size_default</item>
+    </style>
+
+    <style name="DetailDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/padding_size_default</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:autoLink">web</item>
+        <item name="android:textColorLink">@color/text</item>
+    </style>
+
+    <style name="DetailElement">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="TrackSessionDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text2</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="SessionInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingLeft">@dimen/padding_size_default</item>
+        <item name="android:paddingRight">@dimen/padding_size_default</item>
+        <item name="android:paddingBottom">@dimen/padding_size_default</item>
+    </style>
+
+    <style name="TrackIconSessionDetail">
+        <item name="android:padding">@dimen/padding_size_default</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CompanySpeakerDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text2</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="NameSpeakerDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="ImageSpeakerDetail">
+        <item name="android:padding">@dimen/padding_size_default</item>
+        <item name="android:layout_width">@dimen/speaker_detail_img_w</item>
+        <item name="android:layout_height">@dimen/speaker_detail_img_h</item>
+    </style>
+
+    <!-- END - Detail Information Styles -->
+
+
+    <!-- START - Schedule Styles -->
+
+    <style name="ScheduleIndicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/padding_size_x2</item>
+    </style>
+
+    <style name="ScheduleDate">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/padding_size_default</item>
+        <item name="android:paddingBottom">@dimen/padding_size_default</item>
+    </style>
+
+    <!-- END - Schedule Styles -->
+
+    <style name="LocationImageButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@drawable/selector_text1</item>
+        <item name="android:background">@drawable/dashboard_button_bg</item>
+        <item name="android:padding">@dimen/location_info_padding</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/star" android:state_checked="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/star_full" android:state_checked="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/star_full" android:state_checked="true" android:state_focused="false"/>
+    <item android:drawable="@drawable/star" android:state_checked="false" android:state_pressed="true"/>
+    <item android:drawable="@drawable/star" android:state_checked="false" android:state_focused="true"/>
+    <item android:drawable="@drawable/star" android:state_checked="false" android:state_focused="false"/>
+    <item android:drawable="@drawable/star"/>
+
+</selector>

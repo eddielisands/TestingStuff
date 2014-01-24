@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+		style="@style/DefaultParentLayout"
+>
+
+	<LinearLayout style="@style/ActionBar">
+	
+		<ImageButton style="@style/ActionBarHomeButton"/>
+		
+		<ImageView style="@style/ActionBarSeparator" />
+	
+		<TextView
+			style="@style/ActionBarTitle"
+			android:text="@string/favorites_title"
+ 		 />
+	</LinearLayout>	
+	
+	<LinearLayout style="@style/Divider"/>
+	
+	<TextView 
+		android:id="@+id/favoriteNoText"
+		android:layout_height="match_parent" 
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:text="@string/favorites_no_entries"
+		android:textColor="@color/text"
+		android:textSize="@dimen/text_size_large"
+		android:visibility="gone"
+	/>
+	
+	<ListView 
+		style="@style/DefaultList"
+		android:id="@+id/favoritelistview" 
+		android:fastScrollEnabled="true"
+	/>
+</LinearLayout>

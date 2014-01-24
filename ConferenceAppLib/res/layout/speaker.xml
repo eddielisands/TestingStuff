@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DefaultParentLayout">
+
+    <LinearLayout style="@style/ActionBar">
+
+        <ImageButton style="@style/ActionBarHomeButton"/>
+
+        <ImageView style="@style/ActionBarSeparator"/>
+
+        <TextView
+            style="@style/ActionBarTitle"
+            android:text="@string/speaker_title"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Divider"/>
+
+    <ListView
+        android:id="@+id/speakerlist"
+        style="@style/DefaultList"
+        android:fastScrollEnabled="true"/>
+
+</LinearLayout>

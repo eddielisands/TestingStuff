@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MTC!</string>
+    <string name="lang_code">DE</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="later">Später</string>
+    <string name="dashboard_btn_schedule">Zeitplan</string>
+    <string name="dashboard_btn_sessions">Tracks</string>
+    <string name="dashboard_btn_speaker">Speaker</string>
+    <string name="dashboard_btn_twitter">Twitter</string>
+    <string name="dashboard_btn_fav">Favoriten</string>
+    <string name="dashboard_btn_map">Orientierung</string>
+    <string name="dashboard_dialog_download">Lade Daten herunter…</string>
+    <string name="dashboard_counter_weeks">Wochen</string>
+    <string name="dashboard_counter_week">Woche</string>
+    <string name="dashboard_counter_day">Tag</string>
+    <string name="dashboard_counter_days">Tage</string>
+    <string name="dashboard_counter_hours">Stunden</string>
+    <string name="dashboard_counter_and">und</string>
+    <string name="dashboard_counter_until">\nbis zur nächsten MTC!</string>
+    <string name="dashboard_counter_ready">Willkommen auf der MTC 2014!</string> <!-- Eddie Li Change for upcoming MTC -->
+    <string name="dashboard_dia_no_net_title">Keine Internet Verbindung</string>
+    <string name="dashboard_dia_no_net_msg">Sie benötigen eine aktive Internet Verbindung zum runterladen der Initialen Daten. Bitte aktivieren Sie eine Internet Verbindung und probieren Sie es erneut!</string>
+    <string name="dashboard_dia_no_wlan_title">Keine WLAN Verbindung</string>
+    <string name="dashboard_dia_no_wlan_msg">Keine aktive WLAN Verbindung gefunden. Möchten Sie über das Mobilefunknetz die Initialen Daten herunterladen (~1mb)?</string>
+    <string name="dashboard_toast_no_inet">Keine Internet Verbindung!</string>
+    <string name="location_title">Orientierung</string>
+    <string name="location_show_map">Zeige Karte und navigiere mit</string>
+    <string name="location_send_via_email">Sende Email mit</string>
+    <string name="imageviewer_dialog_load">Lade Raumplan…</string>
+    <string name="schedule_title">Zeitplan</string>
+    <string name="schedule_day">Tag</string>
+    <string name="twitter_title">Twitter</string>
+    <string name="twitter_dia_load_tweets">Lade Tweets…</string>
+    <string name="twitter_tweet_tweeted_at">getwittert am</string>
+    <string name="twitter_tweet_tweeted">getwittert vor</string>
+    <string name="twitter_tweet_just_now">weniger als einer Minute</string>
+    <string name="twitter_tweet_about">über</string>
+    <string name="twitter_tweet_minute_ago">Minute</string>
+    <string name="twitter_tweet_minutes_ago">Minuten</string>
+    <string name="twitter_tweet_hour_ago">Stunde</string>
+    <string name="twitter_tweet_hours_ago">Stunden</string>
+    <string name="speaker_details_title">Speaker Details</string>
+    <string name="speaker_details_sessions">Sessions</string>
+    <string name="speaker_title">Speaker</string>
+    <string name="sessions_title">Tracks</string>
+    <string name="sessions_all_sessions">Alle Tracks</string>
+    <string name="session_details_title">Session Details</string>
+    <string name="session_details_speaker">Speaker</string>
+    <string name="favorites_title">Favoriten</string>
+    <string name="favorites_no_entries">Keine Favoriten!</string>
+    <string name="orientation_location">Lageplan</string>
+    <string name="orientation_floorplan">Raumplan</string>
+    <string name="orientation_feedback">Feedback</string>
+    <string name="room_label">Raum:</string>
+    <string name="dashboard_date">17. bis 20. März 2014</string> <!-- Eddie Li Change for upcoming MTC date -->
+
+</resources>

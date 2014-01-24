@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	style="@style/DefaultParentLayout"
+>
+
+	<LinearLayout style="@style/ActionBar">
+	
+		<ImageButton style="@style/ActionBarHomeButton"/>
+		
+		<ImageView style="@style/ActionBarSeparator" />
+	
+		<TextView
+			android:id="@+id/sessions_title_text"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:singleLine="true"
+			style="@style/ActionBarTitle"
+			android:text="@string/sessions_title"
+ 		 />
+	</LinearLayout>
+	
+	<LinearLayout style="@style/Divider"/>
+	
+	<ListView 
+		style="@style/DefaultList"
+		android:id="@+id/sessionslistview" 
+		android:fastScrollEnabled="true"
+	/>
+		
+</LinearLayout>

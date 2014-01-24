@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboardRoot"
+    style="@style/DefaultParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        style="@style/DashboardBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:scaleType="center"
+            android:src="@drawable/conference_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/ad"
+        android:layout_below="@+id/logoLayout"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightergray"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- style="@style/DashboardButton" -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:onClick="onClickSpeakers"
+                android:paddingLeft="20dp" >
+
+                <ImageView
+                    android:id="@+id/Button4"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/dashboard_button_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/dashboard_speaker" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Button4"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="@string/dashboard_btn_speaker"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_size_tiny" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="20dp" >
+
+                <ImageView
+                    android:id="@+id/Button2"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/dashboard_button_bg"
+                    android:onClick="onClickFav"
+                    android:padding="10dp"
+                    android:src="@drawable/dashboard_favorite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Button2"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="@string/dashboard_btn_fav"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_size_tiny" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightergray"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/Button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/dashboard_button_bg"
+                    android:onClick="onClickSessions"
+                    android:padding="10dp"
+                    android:src="@drawable/dashboard_session"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Button1"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="@string/dashboard_btn_sessions"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_size_tiny" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/Button3"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/dashboard_button_bg"
+                    android:onClick="onClickMap"
+                    android:padding="10dp"
+                    android:src="@drawable/dashboard_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Button3"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="@string/dashboard_btn_map"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_size_tiny" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightergray"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/Button5"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/dashboard_button_bg"
+                    android:onClick="onClickSchedule"
+                    android:padding="10dp"
+                    android:src="@drawable/dashboard_schedule" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Button5"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="@string/dashboard_btn_schedule"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_size_tiny" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/Button6"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/dashboard_button_bg"
+                    android:onClick="onClickTwitter"
+                    android:padding="10dp"
+                    android:src="@drawable/dashboard_twitter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Button6"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="@string/dashboard_btn_twitter"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_size_tiny" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/DashboardAdvertisment"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/countdown"
+            style="@style/CountdownText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:onClick="onClickCountdown"
+            android:text="2-5 Sept\ncountdown countdown"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/ad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickAd1"
+            android:src="@drawable/default_ad"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickAd2"
+            android:src="@drawable/arconsis_default_ad"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/DashboardAdvertisment"
+        style="@style/Advertisment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"
+        android:onClick="onClickAdvertisment"
+        android:scaleType="fitXY"
+        android:src="@drawable/footer" />
+
+</RelativeLayout>

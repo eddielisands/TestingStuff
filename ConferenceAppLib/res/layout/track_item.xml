@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DefaultItemLayout">
+
+    <!-- <View -->
+    <!-- style="@style/TrackColorStrip" -->
+    <!-- android:id="@+id/trackColor" -->
+    <!-- android:visibility="gone" -->
+    <!-- /> -->
+
+    <TextView
+        android:id="@+id/sessionTitle"
+        style="@style/SessionTitle"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

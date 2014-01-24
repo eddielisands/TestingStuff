@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/scheduleItemTimeRow"
+        style="@style/TimeRow"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/scheduleItemTimeDivider"
+        style="@style/SmallDivider"
+        android:layout_below="@+id/scheduleItemTimeRow"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scheduleItemTimeDivider">
+
+        <TextView
+            android:id="@+id/scheduleItemSessionTitle"
+            style="@style/SessionTitle"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/scheduleItemFav"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="Title"/>
+
+        <ToggleButton
+            android:id="@+id/scheduleItemFav"
+            style="@style/FavoriteButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <ImageView
+            android:id="@+id/scheduleItemSessionImg"
+            style="@style/SessionIcon"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/scheduleItemSessionTitle"
+            android:paddingLeft="10dp"
+            android:src="@drawable/session_icon"/>
+
+        <TextView
+            android:id="@+id/row2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scheduleItemSessionImg"
+            android:layout_toRightOf="@+id/scheduleItemSessionImg"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:text="Room"
+            android:textColor="@color/gray"/>
+    </RelativeLayout>
+
+</RelativeLayout>

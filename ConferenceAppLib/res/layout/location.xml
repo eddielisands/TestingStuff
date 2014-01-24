@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DefaultParentLayout">
+
+    <LinearLayout style="@style/ActionBar">
+
+        <ImageButton style="@style/ActionBarHomeButton"/>
+
+        <ImageView style="@style/ActionBarSeparator"/>
+
+        <TextView
+            style="@style/ActionBarTitle"
+            android:text="@string/location_title"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Divider"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        style="@style/LocationImageButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            style="@style/LocationImageButton"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/selector_map"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onClickMap"
+            android:text="@string/orientation_location"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LocationImageButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/locationRoomPlan"
+            style="@style/LocationImageButton"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/selector_floor"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onClickRoomplan"
+            android:text="@string/orientation_floorplan"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LocationImageButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            style="@style/LocationImageButton"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/selector_feedback"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:onClick="onClickFeedback"
+            android:text="@string/orientation_feedback"/>
+    </LinearLayout>
+
+</LinearLayout>

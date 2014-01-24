@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	style="@style/DefaultParentLayout"
+>
+
+	<LinearLayout style="@style/ActionBar">
+	
+		<ImageButton style="@style/ActionBarHomeButton"/>
+		
+		<ImageView style="@style/ActionBarSeparator" />
+	
+		<TextView
+			style="@style/ActionBarTitle"
+			android:text="@string/schedule_title"
+ 		 />
+ 		 
+	</LinearLayout>
+	
+	<LinearLayout style="@style/Divider"/>
+		
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/schedulePager"
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent" 
+	/>
+</LinearLayout>

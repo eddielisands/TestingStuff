@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.conference.app.lib"
+    android:installLocation="preferExternal"
+    android:versionCode="2"
+    android:versionName="2.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name">
+
+        <activity
+            android:name="com.conference.app.lib.ui.Dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.conference.app.lib.ui.Schedule"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.SessionDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.Session"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.Speaker"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.SpeakerDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.TweetReader"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.Favorites"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.LocationAndFeedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"/>
+        <activity
+            android:name="com.conference.app.lib.ui.ImageViewer"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+    </application>
+
+</manifest>

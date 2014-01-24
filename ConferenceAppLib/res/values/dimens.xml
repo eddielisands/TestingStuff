@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_tiny">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="divider_height">2dip</dimen>
+    <dimen name="list_divider_height">1dip</dimen>
+    <dimen name="tweet_img_h">52dip</dimen>
+    <dimen name="tweet_img_w">52dip</dimen>
+    <dimen name="speaker_img_h">64dip</dimen>
+    <dimen name="speaker_img_w">52dip</dimen>
+    <dimen name="speaker_detail_img_h">96dip</dimen>
+    <dimen name="speaker_detail_img_w">78dip</dimen>
+    <dimen name="session_icon_w">24dip</dimen>
+    <dimen name="session_icon_h">24dip</dimen>
+    <dimen name="actionbar_height">45dip</dimen>
+    <dimen name="actionbar_seperator_width">1dip</dimen>
+    <dimen name="padding_size_default">5dip</dimen>
+    <dimen name="padding_size_x2">10dip</dimen>
+    <dimen name="padding_size_x3">15dip</dimen>
+    <dimen name="padding_size_x4">20dip</dimen>
+    <dimen name="location_info_padding">2dip</dimen>
+    <dimen name="track_color_strip_width">8dip</dimen>
+    <dimen name="advertisment_height">48dip</dimen>
+    <dimen name="advertisment_padding">3dip</dimen>
+    <dimen name="session_item_height">50dip</dimen>
+
+</resources>

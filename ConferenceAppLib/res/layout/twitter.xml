@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"    
+	style="@style/DefaultParentLayout"
+>
+
+	<LinearLayout style="@style/ActionBar">
+	
+		<ImageButton style="@style/ActionBarHomeButton"/>
+		
+		<ImageView style="@style/ActionBarSeparator"/>
+	
+		<TextView
+			style="@style/ActionBarTitle"
+			android:text="@string/twitter_title"
+ 		 />
+ 		 
+		<ImageView style="@style/ActionBarSeparator" />
+		
+ 		<ImageButton
+ 			style="@style/ActionBarSyncButton" 
+ 			android:id="@+id/twitter_sync_btn"
+		/>
+	</LinearLayout>
+	
+	<LinearLayout style="@style/Divider"/>
+	
+	<ListView 
+		style="@style/DefaultList"
+		android:id="@+id/tweetlist" 
+	/>
+		
+</LinearLayout>
