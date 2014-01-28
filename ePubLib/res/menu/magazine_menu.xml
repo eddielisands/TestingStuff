@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+  <item android:id="@+id/menu_magazine_font_size" android:showAsAction="ifRoom" android:icon="@drawable/icon_font">
+  			<menu>
+				<group 
+					android:id="@+id/menu_magazine_font_nav_group">
+						<item 
+							android:id="@+id/menu_magazine_font_size_smaller"
+							android:title="Smaller"/>
+						<item 
+							android:id="@+id/menu_magazine_font_size_bigger"
+							android:title="Bigger"/>
+				</group>
+			</menu>
+  </item>
+-->
+  <item android:id="@+id/menu_magazine_bookmark" android:showAsAction="ifRoom" android:icon="@drawable/icon_bookmark_magazine" />
+
+  <item android:id="@+id/menu_magazine_toc" android:showAsAction="ifRoom" android:icon="@drawable/icon_toc">
+  			<menu>
+		  		<group	android:id="@+id/menu_magazine_toc_group">
+				</group>
+			</menu>
+  </item>
+
+  <item android:id="@+id/menu_magazine_search" android:showAsAction="ifRoom"
+		android:icon="@drawable/icon_search" android:actionViewClass="android.widget.SearchView" />
+		
+  <!-- <item android:id="@+id/menu_feed_settings" android:showAsAction="ifRoom"
+		android:icon="@drawable/icon_preferences" /> -->
+</menu>

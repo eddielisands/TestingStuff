@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Eclipse Mag</string>
+    <string name="videofixer_placeholder_text">Unfortunately, this player is not supported. Follow this link to go to original article page.</string>
+    <string name="action_bar_feeds">Feeds</string>
+    <string name="action_bar_library">Library</string>
+    <string name="action_bar_shop">Shop</string>
+    <string name="action_bar_bookmarks">Bookmarks</string>
+    <string name="update_time">2011-07-12 07:07:07 +0000</string>
+    <string name="bookmarks_feed_added">Current feed has been added to bookmarks</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="bookmark_removing_question">Are you sure to remove this bookmark?</string>
+    <string name="bookmark_removing_error">Error occurred upon bookmark deletion</string>
+    <string name="cannot_connect_title">Can\'t connect to Market</string>
+    <string name="cannot_connect_message">This app cannot connect to Market.
+     Your version of Market may be out of date.
+     You can continue to use this app but you
+     won\'t be able to make purchases.</string>
+    <string name="billing_not_supported_title">Can\'t make purchases</string>
+    <string name="billing_not_supported_message">The Market billing
+     service is not available at this time.  You can continue to use this app but you
+     won\'t be able to make purchases.</string>
+    <string name="restoring_transactions">Restoring transactions</string>
+
+    <string-array name="bookmarks_filters">
+        <item>All Bookmarks</item>
+        <item>From Feeds</item>
+        <item>From Library</item>
+    </string-array>
+
+    <string name="copy_resources_magazines_title">Copying magazine(s) from resources...</string>
+    <string name="bookmarks_topic_added">Current topic has been added to bookmarks</string>
+    <string name="update_interval">Update Interval</string>
+    <string name="manage_feeds">Feed Subscription</string>
+    <string name="loading_video">Loading video</string>
+    <string name="feed_hint_title">Manage feeds!</string>
+    <string name="feed_hint_subtitle">Go to Settings -> Subscriptions,\nor tap here to get more themed stories.</string>
+    <string name="delete_issue_dialog_title">Delete Issue</string>
+    <string name="delete_issue_dialog_message">Do you really want to delete this issue? You can download it later.</string>
+    <string name="download_issue_dialog_title">Download Issue</string>
+    <string name="download_issue_dialog_message">Do you really want to download this issue?</string>
+    <string name="no_bookmarks_yet">No bookmarks yet</string>
+    <string name="no_bookmarks_desc">Add bookmarks from feeds and magazines by tapping "Bookmark" button on the Action Bar.</string>
+    <string name="bookmark_issue_dialog_title">Bookmark Issue</string>
+    <string name="bookmark_issue_dialog_message">This magazine has bookmarks. Deleting the magazine will remove the bookmarks. Do you really want to delete the magazine?</string>
+    <string name="magazine_open_link_question_subtitle">Would you like to open this link in an external browser?</string>
+    <string name="settings_menu_subscription_account_title">Subscriber Account Management</string>
+    <string name="settings_menu_subscription_current_account_placeholder">not registered</string>
+    <string name="settings_menu_subscription_current_account_template">registered as: %1$s</string>
+    <string name="settings_submenu_subscription_account_actions">Subscriber Account Management</string>
+    <string name="subscription_account_action_login">Login</string>
+    <string name="subscription_account_action_logout">Logout</string>
+    <string name="subscription_account_action_request_name">Request user name</string>
+    <string name="subscription_account_action_request_password">Request password</string>
+    <string name="subscription_account_action_register_new_account">Create new account</string>
+    <string name="subscription_account_action_request_name_url">http://intellibook.de/user/requestusername/?ipad=1</string>
+    <string name="subscription_account_action_request_password_url">http://intellibook.de/user/requestpassword/?ipad=1</string>
+    <string name="subscription_account_action_register_new_account_url">http://intellibook.de/user/add/?ipad=1</string>
+    <string name="subscription_title_login">Username</string>
+    <string name="subscription_title_password">Password</string>
+    <string name="subscription_title_signin">Sign in</string>
+    <string name="subscription_dialog_title_auth_failed">Username or password you entered is not correct</string>
+    <string name="subscription_dialog_title_auth_ioerror">Communication error, please try again later</string>
+    <string name="shop_auth_dialog_title_auth_failed">Subscription username or password stored in settings are incorrect. Please re-login with valid username and password</string>
+    <string name="shop_auth_dialog_title_auth_ioerror">Communication error, please try again later</string>
+    <string name="subscription_dialog_title_logged_successfully">You are now logged in</string>
+    <string name="app_id">223252187774878</string> <!-- Facebook JTJ constants -->
+    <string name="backend_base_url">https://ipad.sandsmedia.com:8443/ipad/ecm/</string> <!-- JTJ backend base url -->
+    <string name="magazine_series_prefix">Eclipse Magazin </string> <!-- JTJ magazine series prefix -->
+    <string name="api_base_url">http://ecm-android-reader-api.sandsmedia.com/</string> <!-- JTJ api base url -->
+    <string name="app_purchase_id">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArWSefa4/NUTnmwa38Au0vhWuNTut2ajKrTcioz13ZgPOtSbco4bpAKnMgCdK8OtuAHiRU3GTG2y6jnvTdZSRlB598gAjI6mhT8EjJ2jgjWR/fAU4IE+esC16UjFEumncq/LZ/01ZaFGq2J+2jrbJ498xRTIFbgCzlXB9v8xH60bIPj9K8Kq+QnyILVAHbQYZ33uPbkvAd3/romcvt4vDajALZthPTck+u6z3cxTgU68ps5QFXPDWVlPaMs+qu7qmO6XQqgbs6sPHpoRcS+aQW+HysRp2eFeU2K8NwjYd4IP0UrlWZGR7g6R/vTUWksMEtEO3mk7FPYrsiV1C6v+zzQIDAQAB</string>
+    <string name="app_purchase_id">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArWSefa4/NUTnmwa38Au0vhWuNTut2ajKrTcioz13ZgPOtSbco4bpAKnMgCdK8OtuAHiRU3GTG2y6jnvTdZSRlB598gAjI6mhT8EjJ2jgjWR/fAU4IE+esC16UjFEumncq/LZ/01ZaFGq2J+2jrbJ498xRTIFbgCzlXB9v8xH60bIPj9K8Kq+QnyILVAHbQYZ33uPbkvAd3/romcvt4vDajALZthPTck+u6z3cxTgU68ps5QFXPDWVlPaMs+qu7qmO6XQqgbs6sPHpoRcS+aQW+HysRp2eFeU2K8NwjYd4IP0UrlWZGR7g6R/vTUWksMEtEO3mk7FPYrsiV1C6v+zzQIDAQAB</string>
+
+</resources>

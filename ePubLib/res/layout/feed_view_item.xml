@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<View
+    	android:layout_weight="0.1"
+        android:layout_width="10dp"
+        android:alpha="0.2"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="#FFFFFF"
+    android:id="@+id/linearLayout2"
+    android:layout_weight="0.9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/loadingLayout" android:visibility="visible">
+        <ProgressBar android:id="@+id/progressBar1" style="?android:attr/progressBarStyleLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="320dip"></ProgressBar>
+    </LinearLayout>
+	<ScrollView	  
+	  android:background="#FFFFFF"
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent" android:id="@+id/viewOfItem" android:visibility="invisible">
+	    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_height="match_parent" android:layout_marginLeft="10dip" android:layout_marginRight="20dip" android:layout_marginTop="15dip" android:layout_marginBottom="10dip">
+	        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_margin="5dip" android:id="@+id/publication_date" android:textColor="@color/gray"></TextView>
+	        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_margin="5dip" android:id="@+id/item_title" android:textColor="@color/black"></TextView>
+	        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_margin="5dip" android:id="@+id/item_author" android:textColor="@color/gray"></TextView>
+	        <WebView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dip" android:id="@+id/text_description"></WebView>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>
+</LinearLayout>

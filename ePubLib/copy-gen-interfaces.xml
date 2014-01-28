@@ -1,0 +1,12 @@
+<project default="copy-needed-interfaces-to-gen-folder" basedir=".">
+
+	<!-- ================================= 
+          target: copy-needed-interfaces-to-gen-folder              
+         ================================= -->
+	<target name="copy-needed-interfaces-to-gen-folder" description="Copies the interfaces from the interface folder into gen folder">
+		<copy todir="${basedir}/gen">
+			<fileset dir="${basedir}/gen-needed-sources" />
+		</copy>
+	</target>
+
+</project>

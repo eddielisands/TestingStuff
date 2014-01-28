@@ -1,0 +1,10 @@
+.*.swp
+.DS_Store
+bin
+local.properties
+gen
+tmp*
+.idea/
+out/
+*.iml
+gen/com/masterofcode/android/jtj/R.java

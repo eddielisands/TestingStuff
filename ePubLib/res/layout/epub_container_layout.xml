@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_height="match_parent"
+      android:id="@+id/relativeLayout1"
+      android:layout_width="wrap_content"
+      android:visibility="gone">
+    <WebView
+	  android:layout_height="match_parent"
+	  android:id="@+id/mediaWebView"
+	  android:layout_width="352dip"
+	  android:layout_alignParentBottom="true"
+	  android:layout_alignParentTop="true"
+	  android:scrollbars="none"
+	  android:clickable="true"
+	  android:longClickable="false">
+	</WebView>
+    <com.masterofcode.android.EPubBookRender.ContentWebView
+	  android:layout_height="match_parent"
+	  android:id="@+id/contentWebView"
+	  android:layout_alignParentBottom="true"
+	  android:layout_alignParentRight="true"
+	  android:layout_width="fill_parent"
+	  android:layout_toRightOf="@+id/mediaWebView"
+	  android:clickable="true"
+	  android:scrollbars="none">
+	</com.masterofcode.android.EPubBookRender.ContentWebView>
+</RelativeLayout>

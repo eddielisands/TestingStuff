@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feed_categories">
+    	<item>All-inclusive</item>
+    	<item>News</item>
+    	<item>Videos</item>
+    </string-array>
+    <string-array name="menu_categories">
+    	<item>Feeds</item>
+    	<item>Library</item>
+    	<item>Shop</item>
+    	<item>Bookmarks</item>
+    </string-array>
+    <string-array name="time_to_update">
+		<item>30 minutes</item>
+		<item>1 hour</item>
+		<item>2 hour</item>
+		<item>3 hour</item>
+		<item>6 hour</item>
+	</string-array>
+	<string-array name="time_to_update_in_ms">
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>7200000</item>
+		<item>10800000</item>
+		<item>21600000</item>
+	</string-array>
+    <string-array name="subscription_account_settings_list">
+		<item>@string/subscription_account_action_login</item>
+		<item>@string/subscription_account_action_register_new_account</item>
+		<item>@string/subscription_account_action_request_name</item>
+		<item>@string/subscription_account_action_request_password</item>
+		<item>@string/subscription_account_action_logout</item>
+	</string-array>
+</resources>

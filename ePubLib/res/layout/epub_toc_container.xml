@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1" android:id="@+id/tocRoot" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical" android:background="#b0000000">
+    <Button android:id="@+id/tocHideButton" android:layout_gravity="top|left" android:background="@drawable/epub_button_toc_hide" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"></Button>
+    <HorizontalScrollView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tocScrollView">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/tocContainer" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="5dp" android:paddingTop="5dp">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

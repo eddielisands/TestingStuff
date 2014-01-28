@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+  <item android:id="@+id/menu_mark_as_read" android:showAsAction="never|withText"
+		android:title="Mark As Read" />
+		
+  <item android:id="@+id/menu_feed_search" android:showAsAction="always"
+		android:title="Search" android:actionViewClass="android.widget.SearchView" />
+		
+  <item android:id="@+id/menu_feed_settings" android:showAsAction="never|withText"
+		android:title="Settings"/>
+</menu>

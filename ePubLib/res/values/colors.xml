@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#999999</color>
+    <color name="gray_l">#C0C0C0</color>
+    <color name="dark_blue_text">#3167a3</color>
+    <color name="light_blue_text">#adcae8</color>
+    <color name="light_blue_menu_divider">#4d75b0</color>
+    <color name="transparent">#00000000</color>
+    <color name="settings_details_color">#31ee00</color>
+    
+</resources>

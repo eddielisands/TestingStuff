@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="horizontal">
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:id="@+id/container_relative_layout">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true" android:id="@+id/search_and_list_relative_layout" android:layout_toRightOf="@+id/filter_linear_layout" android:background="#FFF">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/search_bar_relative_layout" android:layout_alignParentTop="true" android:paddingLeft="20dp" android:paddingRight="20dp" android:gravity="center_vertical" android:paddingBottom="30dp" android:paddingTop="30dp">
+                <RelativeLayout android:id="@+id/search_criteria_input_layout" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_width="match_parent" android:padding="10dp">
+                    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_search" android:layout_centerVertical="true" android:layout_alignParentLeft="true"></ImageView>
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X" android:id="@+id/clear_search_criteria_button" android:layout_alignParentRight="true" android:layout_centerVertical="true"></Button>
+                    <EditText android:id="@+id/search_criteria_edit_text" android:lines="1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#000" android:textSize="24sp" android:layout_centerVertical="true" android:layout_toLeftOf="@+id/clear_search_criteria_button" android:layout_toRightOf="@+id/imageView1" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:inputType="none|text" android:background="#DDD" android:imeOptions="actionSearch">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/search_criteria_type_layout" android:layout_height="wrap_content" android:layout_below="@+id/search_criteria_input_layout" android:layout_width="fill_parent" android:layout_marginLeft="80dp" android:layout_marginRight="130dp">
+                    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:textColor="#000" android:text="Everywhere" android:layout_centerVertical="true" android:id="@+id/search_type_check_box_everywhere"></CheckBox>
+                    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:text="In Magazines" android:textColor="#000" android:layout_centerVertical="true" android:id="@+id/search_type_check_box_magazines"></CheckBox>
+                    <CheckBox android:text="In News" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000" android:layout_centerVertical="true" android:id="@+id/search_type_check_box_news" android:layout_toLeftOf="@+id/search_type_check_box_magazines"></CheckBox>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_below="@+id/search_bar_relative_layout" android:id="@+id/search_results_relative_layout">
+                <ProgressBar android:layout_width="wrap_content" style="?android:attr/progressBarStyleLarge" android:layout_height="wrap_content" android:layout_centerInParent="true" android:visibility="gone" android:id="@+id/search_progress_bar"></ProgressBar>
+                <ListView android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/search_results_list_view"></ListView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

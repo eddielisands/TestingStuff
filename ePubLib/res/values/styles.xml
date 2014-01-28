@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar" />
+    
+    <style name="ActionBar.Custom" parent="@style/ActionBar">
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+    <style name="Theme.Dialog.MediaFullScreen" parent="android:Theme.Dialog">
+	<item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Transparent.NoTitleBar" parent="android:Theme.NoTitleBar">
+	    <item name="android:windowBackground">@color/transparent</item>
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowIsFloating">true</item>
+  	</style>
+    
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true" >
+		<TextView
+			android:id="@+id/settings_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30sp"
+			android:text="Settings"
+			android:textColor="@color/white"
+			android:layout_alignParentLeft="true" />
+		<ImageView
+			android:layout_below="@+id/settings_title"
+			android:id="@+id/separator_title"
+			android:src="@drawable/separator_dot"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content" />
+		<RelativeLayout
+			android:id="@+id/settings_account"
+			android:background="@color/black"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/separator_title" >
+			<TextView
+				android:text="Account Managment"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/account_title"
+				android:paddingLeft="10dip"
+				android:paddingTop="5dip" />
+			<TextView
+				android:text="account"
+				android:textColor="@color/settings_details_color"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/account_name"
+				android:layout_below="@+id/account_title"
+				android:layout_above="@+id/separator_account"
+				android:paddingLeft="10dip"
+				android:paddingBottom="5dip" />
+			<ImageView
+				android:id="@+id/account_image"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/settings_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="10dip" />
+		</RelativeLayout>
+		<ImageView
+			android:layout_below="@+id/settings_account"
+			android:id="@+id/separator_account"
+			android:src="@drawable/separator_dot"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content" />
+		<RelativeLayout
+			android:id="@+id/settings_feeds"
+			android:background="@color/black"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/separator_account" >
+			<TextView
+				android:text="Feed Subscription"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/feeds_title"
+				android:paddingLeft="10dip"
+				android:paddingTop="5dip" />
+			<TextView
+				android:text="count feeds"
+				android:textColor="@color/settings_details_color"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/feeds_name"
+				android:layout_below="@+id/feeds_title"
+				android:layout_above="@+id/separator_feeds"
+				android:paddingLeft="10dip"
+				android:paddingBottom="5dip" />
+			<ImageView
+				android:id="@+id/feeds_image"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/settings_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="10dip" />
+		</RelativeLayout>
+		<ImageView
+			android:layout_below="@+id/settings_feeds"
+			android:id="@+id/separator_feeds"
+			android:src="@drawable/separator_dot"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip" />
+		<RelativeLayout
+			android:id="@+id/settings_time_interval"
+			android:background="@color/black"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/separator_feeds" >
+			<TextView
+				android:text="Update Interval"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/time_title"
+				android:paddingLeft="10dip"
+				android:paddingTop="5dip" />
+			<TextView
+				android:text="time to update"
+				android:textColor="@color/settings_details_color"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/time_name"
+				android:layout_below="@+id/time_title"
+				android:paddingLeft="10dip"
+				android:paddingBottom="5dip" />
+			<ImageView
+				android:id="@+id/time_image"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/settings_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="10dip" />
+		</RelativeLayout>
+		<ImageView
+			android:layout_below="@+id/settings_time_interval"
+			android:id="@+id/separator_time"
+			android:src="@drawable/separator_dot"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content" />
+		
+		<RelativeLayout
+			android:id="@+id/settings_subscription_account"
+			android:background="@color/black"
+			android:layout_width="450dip"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/separator_time" >
+			<TextView
+				android:text="@string/settings_menu_subscription_account_title"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/subscription_accunt_title"
+				android:paddingLeft="10dip"
+				android:paddingTop="5dip" />
+			<TextView
+				android:text="@string/settings_menu_subscription_current_account_placeholder"
+				android:textColor="@color/settings_details_color"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/subscription_account_name"
+				android:layout_below="@+id/subscription_accunt_title"
+				android:paddingLeft="10dip"
+				android:paddingBottom="5dip" />
+			<ImageView
+				android:id="@+id/subscription_account_image"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/settings_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="10dip" />
+		</RelativeLayout>
+  	</RelativeLayout>
+</RelativeLayout>

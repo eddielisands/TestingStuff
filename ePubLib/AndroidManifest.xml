@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sandsmedia.apps.mobile.android.epub.lib"
+    android:versionCode="1"
+    android:versionName="1.2" >
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+    <!-- VERY IMPORTANT! Don't forget this permission or in-app billing won't work. -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name="com.masterofcode.android.magreader.application.JtjApplication"
+        android:debuggable="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo" >
+        <activity
+            android:name="com.masterofcode.android.magreader.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.masterofcode.android.magreader.FeedsActivity" >
+        </activity>
+        <activity android:name="com.masterofcode.android.magreader.MainLibraryActivity" >
+        </activity>
+        <activity android:name="com.masterofcode.android.magreader.MainBookmarkActivity" >
+        </activity>
+        <activity android:name="com.masterofcode.android.magreader.MainShopActivity" >
+        </activity>
+        <activity android:name="com.masterofcode.android.magreader.IssueDetailsActivity" >
+        </activity>
+
+        <service android:name="com.masterofcode.android.magreader.service.GetFeedsService" >
+        </service>
+        <service android:name="com.masterofcode.android.magreader.service.GetIssuesService" >
+        </service>
+
+        <activity android:name="com.masterofcode.android.magreader.EpubViewerActivity" >
+        </activity>
+        <activity
+            android:name="com.masterofcode.android.EPubBookRender.FullScreenEmbeddedMediaImageActivity"
+            android:theme="@style/Theme.Dialog.MediaFullScreen" >
+        </activity>
+        <activity
+            android:name="com.masterofcode.android.EPubBookRender.FullScreenEmbeddedMediaExternalActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.Dialog.MediaFullScreen" >
+        </activity>
+        <activity
+            android:name="com.masterofcode.android.magreader.SettingsActivity"
+            android:theme="@style/Theme.Transparent.NoTitleBar" >
+        </activity>
+
+        <service android:name="com.masterofcode.android.magreader.inapp.BillingService" >
+        </service>
+
+        <receiver android:name="com.masterofcode.android.magreader.inapp.BillingReceiver" >
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+                <action android:name="com.android.vending.billing.RESPONSE_CODE" />
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.masterofcode.android.magreader.SearchActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <receiver android:name="com.masterofcode.android.magreader.MainShopActivity$BroadcastListener" >
+            <intent-filter>
+                <action android:name="com.masterofcode.android.magreader.utils.constants.Constants.UPDATE_ISSUE" />
+                <action android:name="com.masterofcode.android.magreader.utils.constants.Constants.SUBSCRIPTION_PASSWORD_IS_INCORRECT" />
+                <action android:name="com.masterofcode.android.magreader.utils.constants.Constants.UPDATING_ISSUES_IO_ERROR" />
+            </intent-filter>
+-        
+        </receiver>
+        <receiver android:name="com.masterofcode.android.magreader.MainActivity$FeedsBroadcastListener" >
+            <intent-filter>
+                <action android:name="com.masterofcode.android.magreader.utils.constants.Constants.FEEDS_TO_UPDATE" />
+-            
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.masterofcode.android.magreader.SubscriptionActivity"
+            android:theme="@style/Theme.Dialog.MediaFullScreen" >
+        </activity>
+    </application>
+
+</manifest>

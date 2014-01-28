@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="horizontal">
+
+    <RelativeLayout android:layout_height="match_parent" android:id="@+id/relativeLayout1" android:layout_width="280dip">
+	    <fragment android:id="@+id/feed_categories_fragment"
+    		  android:layout_width="280dip"
+    		  android:layout_height="wrap_content"
+    		  android:name="com.masterofcode.android.magreader.fragments.FeedsCategoriesFragment" android:layout_marginLeft="10dip" android:layout_marginTop="10dip">
+    	</fragment>
+    	<include android:layout_height="wrap_content" layout="@layout/feeds_add_hint" android:layout_alignParentBottom="true" android:layout_width="match_parent" android:id="@+id/included_feeds_hint"></include>
+    </RelativeLayout>
+    
+    <fragment android:id="@+id/feed_list_fragment"
+    		  android:layout_width="match_parent"
+    		  android:layout_height="match_parent"
+    		  android:name="com.masterofcode.android.magreader.fragments.FeedsListFragment">
+    </fragment>
+       
+</LinearLayout>

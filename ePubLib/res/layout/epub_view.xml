@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/renderView">
+        <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/renderContainer" android:layout_alignParentTop="true" android:layout_above="@+id/renderController">
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_alignParentBottom="true" android:id="@+id/renderController" android:paddingTop="2dp" android:layout_height="40dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:id="@+id/topic_scroll_indicators_linearlayout">
+
+                <ProgressBar
+                    android:id="@+id/topic_pagination_progress_bar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginRight="10dip" android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/topic_page_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#CCC" android:textSize="10pt" android:layout_marginRight="10dip"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:id="@+id/toc_call_linearlayout" android:layout_alignParentLeft="true" android:gravity="center_vertical|center_horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:background="@drawable/bottom_toc_icon" android:gravity="center_vertical|center_horizontal"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="horizontal">
+    <FrameLayout android:layout_height="match_parent" android:id="@+id/frameForListView" android:layout_width="400dip" android:visibility="gone">
+    	<fragment android:id="@+id/feed_list_for_view"
+    		android:layout_width="400dip"
+  	 		android:layout_height="match_parent"
+    		android:name="com.masterofcode.android.magreader.fragments.FeedsListForViewFragment">
+ 	 	</fragment>
+    </FrameLayout>  
+  
+  <fragment android:id="@+id/feed_view_fragment"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:name="com.masterofcode.android.magreader.fragments.FeedsViewFragment">
+  </fragment>
+    
+</LinearLayout>

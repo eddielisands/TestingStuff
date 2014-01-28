@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <item android:id="@+id/menu_feed_share" android:showAsAction="ifRoom"
+		android:icon="@drawable/icon_share">
+			<menu>
+				<group 
+					android:id="@+id/menu_nav_group">
+						<item 
+							android:id="@+id/fb_menu"
+							android:title="Facebook"/>
+						<item 
+							android:id="@+id/twitter_menu"
+							android:title="Twitter"/>
+						<item 
+							android:id="@+id/mail_menu"
+							android:title="Mail"/>
+				</group>
+			</menu>
+  </item>	
+  
+  <item android:id="@+id/menu_feed_browser" android:showAsAction="ifRoom"
+		android:icon="@drawable/icon_web" />
+		
+  <item android:id="@+id/menu_feed_bookmark" android:showAsAction="ifRoom"
+		android:icon="@drawable/icon_bookmark" />
+		
+  <item android:id="@+id/menu_feed_search" android:showAsAction="always"
+  		android:title="Search"
+		android:icon="@drawable/icon_search" android:actionViewClass="android.widget.SearchView" />
+</menu>

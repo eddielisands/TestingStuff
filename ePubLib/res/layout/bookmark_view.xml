@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="horizontal" android:background="@drawable/background">
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:id="@+id/container_relative_layout">
+        <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_alignParentLeft="true" android:layout_width="300dp" android:id="@+id/filter_linear_layout">
+            <ListView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="50dp" android:id="@+id/filters_list_view"></ListView>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true" android:id="@+id/search_and_list_relative_layout" android:layout_toRightOf="@+id/filter_linear_layout" android:background="#FFF">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/search_bar_relative_layout" android:layout_alignParentTop="true" android:paddingLeft="20dp" android:paddingRight="20dp" android:gravity="center_vertical" android:paddingBottom="30dp" android:paddingTop="30dp" android:visibility="gone">
+                <ImageView android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_width="wrap_content" android:src="@drawable/icon_search" android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+                <EditText android:layout_height="wrap_content" android:textColor="#000" android:text="test" android:textSize="24sp" android:id="@+id/search_criteria_edit_text" android:layout_toLeftOf="@+id/clear_search_criteria_button" android:layout_toRightOf="@+id/imageView1" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_width="fill_parent" android:lines="1" android:background="#888" android:layout_centerVertical="true" android:focusable="false">
+                    <requestFocus></requestFocus>
+                </EditText>
+                <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/editText1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:text="X" android:id="@+id/clear_search_criteria_button"></Button>
+            </RelativeLayout>
+            <RelativeLayout android:visibility="gone" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_below="@+id/search_bar_relative_layout" android:id="@+id/no_bookmarks_relative_layout">
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:id="@+id/title"
+            	android:text="@string/no_bookmarks_yet"
+            	android:textAppearance="?android:attr/textAppearanceLarge"
+            	android:layout_height="wrap_content"
+            	android:textColorHighlight="@color/gray"
+            	android:textColor="@color/dark_blue_text"
+            	android:textStyle="bold" 
+            	android:layout_centerHorizontal="true"
+            	android:layout_marginTop="160dip">
+            </TextView>
+            <TextView 
+            	android:layout_width="wrap_content" 
+            	android:id="@+id/text" 
+            	android:layout_below="@id/title"
+            	android:paddingTop="10dip"
+            	android:text="@string/no_bookmarks_desc" 
+            	android:textAppearance="?android:attr/textAppearanceSmall" 
+            	android:layout_height="wrap_content" 
+            	android:maxLines="2" 
+            	android:ellipsize="end" 
+            	android:textColor="@color/black" android:layout_centerHorizontal="true">
+            </TextView>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_below="@+id/search_bar_relative_layout" android:id="@+id/bookmarks_relative_layout">
+                <ProgressBar android:layout_width="wrap_content" style="?android:attr/progressBarStyleLarge" android:layout_height="wrap_content" android:layout_centerInParent="true" android:id="@+id/bookmarks_progress_bar" android:visibility="gone"></ProgressBar>
+                <ListView android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/bookmarks_list_view"></ListView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
