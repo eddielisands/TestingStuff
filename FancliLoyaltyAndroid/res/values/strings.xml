@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iFANCL</string>
+    <string name="facebook_applicationId">557357637621844</string>
+    
+    <!-- General -->
+    <string name="ok_btn_title">OK</string>
+    <string name="cancel_btn_title">Cancel</string>
+    <string name="confirm_btn_title">Confirm</string>
+    <string name="login_btn_title">Login</string>
+    <string name="continue_btn_title">Continue</string>
+    <string name="back_btn_title">Back</string>
+    <string name="share_btn_title">Share</string>
+    <string name="finish_btn_title">finish</string>
+    <string name="edit_btn_title">Edit</string>
+    <string name="save_btn_title">Save</string>
+    <string name="newest_btn_title">Latest</string>
+    <string name="oldest_btn_title">Oldest</string>
+    <string name="try_again_btn_title">Try Again</string>
+    <string name="security_check_btn_title">Enter code</string>
+    <string name="done_btn_title">Done</string>
+    <string name="accept_btn_title">Agree</string>
+
+    <!-- Menu Icon -->
+    <string name="menu_ibeauty_credit_btn_title">iBeauty Credit</string>
+    <string name="menu_product_btn_title">Product Details</string>
+    <string name="menu_fancl_magazine_btn_title">Lifestyle Magazine</string>
+    <string name="menu_my_account_btn_title">My Account</string>
+    <string name="menu_shop_locator_btn_title">Shop Location</string>
+    <string name="menu_about_fancl_btn_title">Brand Uniqueness</string>
+    <string name="menu_notification_btn_title">My Message</string>
+    <string name="menu_settings_btn_title">Setting</string>
+    <string name="menu_qr_code_btn_title">QR Scanner</string>
+    <string name="menu_bookmark_btn_title">My Favourite</string>
+
+    <!-- Tab Bar -->
+    <string name="whats_hot_btn">What\'s Hot</string>
+    <string name="promotion_btn">Promotion</string>
+    <string name="beauty_ichannel_btn">FANCL TV</string>
+    <string name="more_btn">More</string>
+
+    <!-- Welcome Page -->
+    <string name="welcome_page_title">Welcome to</string>
+    <string name="fancl_iloyalty_title">iFANCL</string>
+    <string name="welcome_page_sign_up_btn_title">Sign in</string>
+    <string name="welcome_page_login_btn_title">Login</string>
+    <string name="non_member_login_btn_title">Not yet a FANCL member</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_title">iFANCL Member</string>
+    <string name="sign_up_welcome_title">Welcome to iFANCL</string>
+    <string name="sign_up_hint_title">Enter your FANCL Member ID</string>
+    <string name="sign_up_welcome_userguide_title">Welcome</string>
+    <string name="sign_up_welcome_userguide_msg">Welcome to iFANCL! Start purchasing in our Hong Kong and Macau stores and enjoy your privileges.</string>
+    <string name="title_activity_sign_up_enter_member_id">SignUpEnterMemberID</string>
+    <string name="sign_up_scan_member_id_msg">Do you like to scan the QR code on the receipt to get your Member ID?</string>
+
+    <!-- Login -->
+    <string name="login_page_title">iFANCL Member login</string>
+    <string name="login_email_field_title">Email</string>
+    <string name="login_password_field_title">Password</string>
+    <string name="login_page_forget_password_btn_title">Forget Password?</string>
+    <string name="login_tos_page_back_msg">The registration process is not yet complete. Would you like to cancel?</string>
+
+    <!-- Forget Password -->
+    <string name="login_forget_password_title">Forget Password</string>
+    <string name="login_forget_password_phone_field_title">Mobile / Member ID</string>
+    <string name="login_forget_password_email_field_title">Email</string>
+    <string name="login_forget_password_new_password_title">Your new password has been sent to your registered e-mail</string>
+
+    <!-- Non Member Login -->
+    <string name="non_member_login_title">Non-member Login</string>
+    <string name="non_member_login_msg">Purchase $100 to become FANCL Member. \n\nSome functions are not open to non-member. Thank you for your understanding.</string>
+
+    <!-- Enter Profile Info -->
+    <string name="enter_profile_info_member_id_title">Member ID:</string>
+    <string name="enter_profile_info_registered_title">Registered</string>
+    <string name="enter_profile_info_name_title">Account Name:</string>
+    <string name="enter_profile_personal_information_title">Personal Information</string>
+    
+    <!-- Card Replace -->
+    <string name="card_replace_update_success">You have successfully registered as iFANCL member</string>
+    <string name="card_replace_your_new_member_id">Your New iFANCL Member ID:</string>
+    <string name="card_replace_register_loading">The Registration has entered the final stage. Please be patient and wait a while, thanks!</string>
+
+    <!-- Network Connection -->
+    <string name="no_network_connection">Connection failed. Please check your network connection.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_sign_up_enter_member_id">SignUpEnterMemberID</string>
+
+    <!-- Hot News Detail -->
+    <string name="hot_news_detail_play_video_title">Play Video</string>
+    <string name="whats_hot_category_new_campaign">Brand Highlights</string>
+    <string name="whats_hot_category_new_product">Hot Products</string>
+    <string name="whats_hot_category_new_reading">FANCL Video Today</string>
+    <string name="whats_hot_category_new_promotion">Latest Promotion</string>
+    <string name="whats_hot_category_new_magazine">Lifestyle Magazine</string>
+
+    <!-- Promotion -->
+    <string name="promotion_point_gift_available_view_point_btn_title">Check My Record</string>
+    <string name="promotion_vip_promotion_tab_bar_title">VIP Promotion</string>
+    <string name="promotion_icoupon_tab_bar_title">MyCoupon</string>
+    <string name="promotion_latest_promotion_tab_bar_title">Latest Promotion</string>
+    <string name="promotion_latest_promotion_point_gift_sub_tab_bar_title">Gift Redemption</string>
+    <string name="promotion_latest_promotion_skincare_promotion_sub_tab_bar_title">Other Promotion</string>
+    <string name="promotion_latest_promotion_fs_promotion_sub_tab_bar_title">FS Promotion</string>
+    <string name="promotion_detail_valid">Valid til:</string>
+    <string name="promotion_detail_coupon_no">Coupon No.:</string>
+    <string name="promotion_detail_gift_point_required">Gift Point Required:</string>
+    <string name="promotion_detail_gift_name">Gift:</string>
+    <string name="promotion_detail_answer_all_questions">Please answer all questions</string>
+    <string name="promotion_detail_redeem_btn_title">Redeem</string>
+    <string name="promotion_detail_quantity">Quantity:</string>
+    <string name="promotion_detail_gift_code">Gift Code:</string>
+    <string name="promotion_detail_gift_point_deducted">Gift Point Deducted:</string>
+
+    <!-- Purchase -->
+    <string name="purchase_title">Start to purchase</string>
+    <string name="offline_btn_title">Offline</string>
+    <string name="go_to_pos">Scan the QR Code of FANCL at the cashier register</string>
+    <string name="purchase_waiting_response_title">Connecting to cashier at\n</string>
+    <string name="purchase_waiting_response_shop_title">branch</string>
+    <string name="purchase_waiting_response_msg">waiting response...</string>
+    <string name="purchase_connect_to_pos_successfully_title">You have successfully connected to the cashier registered at</string>
+    <string name="purchase_connect_to_pos_successfully_shop_title">.Press Confirm to return to the homepage.</string>
+    <string name="purchase_fail_to_connect_to_pos_title">Unable to connect to cashier register.\nPlease try again.</string>
+    <string name="purchase_try_again_fail_title">Problems occurred during connection</string>
+    <string name="purchase_try_again_fail_msg">Unstable network. Enter the code to continue.</string>
+    <string name="purchase_enter_4_digit_key_title">Enter the code provided by FANCL</string>
+    <string name="purchase_9_digit_security_code_title">9-digit verification code</string>
+    <string name="purchase_9_digit_security_code_msg">Present the 9-digit code to FANCL</string>
+    <string name="purchase_offline_alert_msg">if you experience some technical problem, you can consider to use "security code" by pressing the below "confirm"</string>
+    <string name="purchase_invalid_qr_code">This QR code is invalid, please scan again</string>
+
+    <!-- Beauty iChannel -->
+    <string name="beauty_ichannel_brief_intro_read_more_btn_title">Read More</string>
+    <string name="beauty_ichannel_detail_related_product_btn_title">相關產品或優惠</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="beauty_fancl_magazine_tab_bar_title">Brand Dynamics</string>
+    <string name="beauty_beauty_tips_tab_bar_title">Info Beauty</string>
+    <string name="beauty_fancl_tv_tab_bar_title">Loving Life</string>
+    <string name="beauty_fancl_search_hint">Video Search</string>
+
+    <!-- Detail -->
+    <string name="read_more">Read More</string>
+    <string name="related">Related</string>
+    <string name="play_video">Play Video</string>
+    <string name="gp_record">Check My Record</string>
+    <string name="related_information">Information</string>
+    <string name="related_product">Product</string>
+
+    <!-- TOS -->
+    <string name="login_tos">Terms and Conditions of Use and Access to iFANCL(the “Terms and Conditions”)*\n\nWelcome to www.fancl-hk.com or www.fancl.com.cn or iFANCL (the “FANCL Websites”). We provide the services available on the FANCL Websites to you subject to the following terms and conditions (the \"Terms and Conditions\"). By accessing or using the FANCL Websites, you are acknowledging that you have read, understand, and agree, without limitation or qualification, to be bound by these Terms and Conditions.\n\n1. Membership Registration\nIf you have registered to be a FANCL Member through the use of the Website, please kindly note the following:\n(i)	You warrant that the personal information which you have provided upon registration is complete and accurate in all respects; \n(ii)	You must create and enter a password upon registration, such password will be used to verify your FANCL membership and to enable you to gain access to the members Website; \n(iii)	Your password may be changed at any time after registration;\n(iv)	You are responsible for maintaining the confidentiality of your password and you must not under any circumstances disclose your password to any third parties;\n(v) You authorize us to assume and deem any use of, access or logon to the FANCL Websites using your membership number and password to have been so used, accessed or logged on by yourself or by persons authorized by you.\n\n2. Transfer of Membership to FANCL Mobile Application (“iFANCL”)\nWe will release iFANCL, a new mobile application for membership registration, and the membership of existing members will be transferred to iFANCL.  You understand that each membership can only be accessed by one mobile phone. Upon registration, existing members will be renewed as iFANCL members, and all subsequently earned points will be accumulated under the iFANCL membership. \n\n3. On iFANCL members’ exclusive promotional offers, please note the following: \n(i)	All exclusive promotional offers will only be applicable during the specified promotional period.\n(ii) 	iFANCL members’ exclusive promotional offers are for the exclusive use of selected members, and can only be used once, and are not transferable. \n(iii)	iFANCL promotional offer coupons or cash coupons with valid serial numbers must be presented when using iFANCL members’ exclusive promotional offers. \n(iv)	Method of calculation of discount for specific product coupons: FANCL will first deduct the coupon value from the price as specified on that promotional offer coupon, and then calculate the member’s discount based on the discounted amount, thus allowing members to enjoy double benefits.\n(v) 	Product promotion coupons cannot be redeemed for cash, and cannot be used in conjunction with other cash coupons. \n(vi)   	The maximum deductible amount is the face value in Hong Kong Dollars (HKD) as specified on the cash coupon. If the cash coupon is used in Macau stores, the coupon value shall be the same face value as specified on the cash coupon in Macau Patacas (MOP, that is to say, that if the coupon has a face value of $100 HKD, then when used in Macau stores, it will have a face value of $110 MOP.\n(vii)	In case of any disputes, our decision shall be final. \n\n4. Promotional activities\nWe may provide promotional activities on the FANCL Websites. By participating in promotions, participants have to agree to be bound by these Terms and Conditions as well as all promotional specific terms and conditions. \n\n5. Intellectual Property\nAll information and content contained on the FANCL Websites (collectively, the “Content”) are subject to and protected by copyright and any other intellectual property rights (“Intellectual Property”). We are the owner of all copyright. Neither the Content, nor any other portion of the Website in whole or in part may be used, reproduced, duplicated, copied, sold, resold, accessed, modified, or otherwise exploited, in whole or in part, for any purpose without our prior written consent.\n\n6. Your obligations and responsibilities\nIn the access or use of the FANCL Websites, you shall comply with these Terms and Conditions and the special warnings or instructions for access or use posted on the FANCL Websites. You shall act always in accordance with the law, custom and in good faith. You may not make any change or alteration to the FANCL Websites or any Content or services that may appear on the FANCL Websites and may not impair in any way the integrity or operation of the Website. Without limiting the generality of any other provisions of these Terms and Conditions, if you default negligently or willfully in any of the obligations set forth in these Terms and Conditions, you shall be liable for all the losses and damages that this may cause to us.\n\n7. Third party links\nWe are not responsible or in any way liable for the content of any off-FANCL Website pages or any other sites linked to or from the FANCL Websites. Links appearing on the FANCL Websites are for convenience only and are not an endorsement by us of the referenced content, product, service, or supplier. Your linking to or from any off-FANCL Website pages or other websites is at your own risk. We are in no way responsible for examining or evaluating, nor do we warrant the offerings of, off-Website pages or any other sites linked to or from the FANCL Websites, nor do we assume any responsibility or liability for the actions, content, products, or services of such webpages and websites, including, without limitation, their privacy statements and terms and conditions. You should carefully review the terms and conditions and privacy policies of all off-FANCL Website pages and other sites that you visit.\n\n8. Personal information (privacy) policy statement\nWe will ensure that its staff will comply with strict standards, and ensure that the personal data you have submitted to us will be kept safely and in strict confidence. \nWe will continue to use the personal data collected for the purposes as stipulated at the time of collection, including the provision of product information and after sales service updates, information and promotional materials, as well as new services of our company and our affiliates.\n\n9. Disclaimer of warranties\nWe make no representations or warranties of any kind whatsoever, express or implied, in connection with these Terms and Conditions or the FANCL Websites. We shall take reasonable and practicable steps to ensure that adequate security measures are in place, and to monitor all relevant risks during system operation. \nYou agree that, to the fullest extent permitted by applicable law, we will not be responsible or liable (whether in contract, tort (including negligence) or otherwise), under any circumstances, for any (i) interruption of business; (ii) access delays or access interruptions to the FANCL Websites; (iii) data non-delivery, misdelivery, corruption, destruction or other modification; (iv) loss or damages of any sort resulting from use or access to the FANCL Websites and or any other websites through links from the FANCL Websites; (v) computer viruses, system failures or malfunctions which may occur in connection with your use of the FANCL Websites, including during hyperlink to or from third party sites; (vi) any inaccuracies, omissions or misleading, false or deceptive statement in the content; or (vii) events beyond our reasonable control.\n\n10. Applicable laws and jurisdiction\nAll use of and access to the FANCL Websites, and these Terms and Conditions shall be governed by and construed in accordance with the local laws. All controversies and disputes arising out of or relating to the FANCL Websites and these Terms and Conditions shall be resolved through arbitration in the country/ jurisdiction whose law governs these Terms and Conditions. \nwww.fancl-hk.com and iFANCL shall be governed by the laws of Hong Kong Special Administrative Region of the People\'s Republic of China. \nwww.fancl.com.cn shall be governed by the laws of the People\'s Republic of China. \n\n11. General Provisions\nYou acknowledge and agree that these Terms and Conditions constitute the complete and exclusive agreement between us concerning your use of the Website, and supersede and govern all prior proposals, agreements, or other communications.\nWe reserve the right to modify the FANCL Websites’ Content and Terms and Conditions. Any modifications will be effective immediately. Your continued use of the FANCL Websites following such modifications will be conclusively deemed acceptance of any changes to these Terms and Conditions. We may, with or without prior notice, terminate any rights granted under these Terms and Conditions. You shall comply immediately with any termination or other notice. \nNothing contained in these Terms and Conditions shall be construed as creating any agency, partnership, or other form of joint enterprise between you and our company. Our failure to require your performance of any provision hereof shall not affect our full right to require such performance at any time thereafter, nor shall our waiver of a breach of any provision hereof be taken or held to be a waiver of the provision itself. \nEach term and provision is independent and severable from other terms and provisions in these Terms and Conditions. In the event that any term or provision of these Terms and Conditions shall be adjudicated or adjudged unenforceable or invalid by any arbitral tribunal or court, such unenforceability or invalidity shall not render the other terms and provisions in these Terms and Conditions unenforceable or invalid.\n\n12. Translation (prevail clause)\nIn the event there is a conflict between this English version of the Terms and Conditions and a translated version, the English version shall prevail.\n\n If you have any questions regarding these Terms and Conditions, please contact us in writing and sending to FANCL, P. O. Box No. 98732, Tsim Sha Tsui Post Office, Kowloon.\n\n* Fantastic Natural Cosmetics Limited is the owner and operates the FANCL Websites.</string>
+
+    <!-- Setting -->
+    <string name="setting">Setting</string>
+    <string name="language">Language</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="email_receipt">Get Email Receipt</string>
+    <string name="language_tc">繁體</string>
+    <string name="language_sc">简体</string>
+    <string name="language_en">English</string>
+    <string name="logout">Logout</string>
+
+    <!-- Favourite -->
+    <string name="favourite_qr">QR Scan History</string>
+    <string name="favourite_my">My Favourite</string>
+
+    <!-- Shop Location -->
+    <string name="locate_store">Locate Store Nearest to me</string>
+    <string name="shop_address">Address</string>
+    <string name="shop_phone">Phone</string>
+    <string name="shop_hour">Business Hour</string>
+    <string name="shop_map">Map</string>
+
+    <!-- Product -->
+    <string name="product_seasonal_picks_tab_bar_title">Seasonal Picks</string>
+    <string name="product_qna_tab_bar_title">Best for me</string>
+    <string name="product_catalogue_tab_bar_title">Products</string>
+    <string name="product_function">Functions:</string>
+    <string name="product_howtouse">How to use:</string>
+    <string name="product_ingredients">Ingredients:</string>
+    <string name="distance">Distance about \</string>
+    <string name="meter">\  meters</string>
+    <string name="qna_start">Start</string>
+    <string name="qna_title">Understanding and caringe for your skin</string>
+    <string name="qna_intro">Identifying your skin type and temperament is the first step to good skin. Do drop by any of our FANCL stores for a professional skin analysis.</string>
+    <string name="qna_bar_title">Q &amp; A</string>
+    <string name="qna_step">Step</string>
+    <string name="qna_step_2"></string>
+    <string name="qna_complete">Test Completed</string>
+    <string name="qna_complete_question">Question </string>
+    <string name="qna_restart">Restart</string>
+    <string name="qna_complete_content">Understanding and caringe for your skin</string>
+    <string name="product_search_hint">Search Name or Product Code</string>
+    <string name="product_color">Color</string>
+
+    <!-- Youtube -->
+    <string name="error_thumbnail_view">There was an error initializing the YouTubeThumbnailView (%1$s)</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <!-- Magazine -->
+    <string name="espoir_magazine">ESPOIR</string>
+    <string name="fh_magazine">F&amp;H Magazine</string>
+
+    <!-- Scanning QRCode -->
+    <string name="qrcode_title">Scanning QRCode</string>
+    <string name="scan_to_more">Scan to Read More</string>
+
+    <!-- Sharing Panel -->
+    <string name="facebook_title">\		Share To Facebook</string>
+    <string name="twitter_title">\		Share On Twitter</string>
+    <string name="email_title">\		Share via Email</string>
+    <string name="favourite_title">Add to Favourite</string>
+    
+    <!-- My Account -->
+    <string name="my_account_record_tab_bar_title">Purchase Record</string>
+    <string name="my_account_gp_reward_tab_bar_title">GP Rewards</string>
+    <string name="my_account_detail_tab_bar_title">Account Details</string>
+    <string name="my_account_member_id_title">Member ID: </string>
+    <string name="my_account_membership_grade_title">Membership Grade: </string>
+    <string name="my_account_current_gift_point_title">Current Gift Point: </string>
+    <string name="my_account_point_expiry_date_title">Point Expiry Date: </string>
+    <string name="my_account_bonus_point_record">Bonus Point Record</string>
+    <string name="my_account_current_discount_point_title">Current Discount Point: </string>
+    <string name="my_account_edit_profile">Edit Profile</string>
+    <string name="my_account_please_enter_password">To protect your personal data, please enter your password to enable profile editing</string>
+    <string name="my_account_forget_password">Forget Password</string>
+    <string name="my_account_electronic_receipt">iReceipt</string>
+    <string name="my_account_old_password">Old Password:</string>
+    <string name="my_account_new_password">New Password:</string>
+    <string name="my_account_re_enter_password">Re-enter password:</string>
+    <string name="my_account_first_name">First Name</string>
+    <string name="my_account_last_name">Last Name</string>
+    <string name="my_account_month_birth">Month of Birth</string>
+    <string name="my_account_year_birth">Year of Birth</string>
+    <string name="my_account_gender">Gender</string>
+    <string name="my_account_skin_type">Skin Type</string>
+    <string name="my_account_country">Residence (Country)</string>
+    <string name="my_account_city">Residence (City)</string>
+    <string name="my_account_address">Address</string>
+    <string name="my_account_email_address">Email Address</string>
+    <string name="my_account_re_enter_email_address">Re-enter Email Address</string>
+    <string name="my_account_mobile_number">Mobile number</string>
+    <string name="my_account_change_password">Change Password</string>
+    <string name="my_account_purchase_total">Total: HK$</string>
+    <string name="my_account_purchase_no_receipt_available">This Purchase Record don\'t have i-receipt</string>
+    
+    
+    <!-- Alert -->
+    <string name="alert_content_expired">The content is expired</string>
+    <string name="alert_contact_us_call">Call our CS hotline:</string>
+    <string name="alert_contact_us_call_time">Service available during office hour (9am-6pm) only</string>
+    <string name="alert_reg_first_name_empty">Please enter your first name</string>
+    <string name="alert_reg_email_empty">Please enter your email</string>
+    <string name="alert_reg_mobile_no_empty">Please enter your mobile number</string>
+    <string name="alert_reg_password_empty">Please enter your password</string>
+    <string name="alert_reg_gender_empty">Please enter your gender</string>
+    <string name="alert_submit_success">Submit Success</string>
+    <string name="alert_no_record">No Record</string>
+    <string name="alert_confirm_logout">Confirm to logout?</string>
+    
+    <!-- About Fancl -->
+    <string name="about_fancl_contact_us">Contact Us</string>
+
+</resources>

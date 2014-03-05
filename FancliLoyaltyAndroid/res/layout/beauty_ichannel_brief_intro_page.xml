@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/detail_bg" />
+
+    <LinearLayout
+        android:layout_width="286dip"
+        android:layout_height="351dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/header_detail_2" />
+
+            <TextView
+                android:id="@+id/beauty_detail_title"
+                android:layout_width="256dip"
+                android:layout_height="48dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="袪斑亮白修護面膜 White Clear"
+                android:textColor="@color/Fancl_Blue"
+                android:gravity="center"
+                android:textSize="16sp" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="311dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="134dip" >
+
+                <RelativeLayout
+                    android:id="@+id/beauty_detail_thumbnail"
+                    android:layout_width="166dip"
+                    android:layout_height="124dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dip" >
+
+                <TextView
+                    android:id="@+id/beauty_detail_description"
+                    android:layout_width="246dip"
+                    android:layout_height="135dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="一次過為肌膚注入18mL美白精華，為細胞增加...."
+                    android:textColor="@color/Fancl_Grey"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout 
+                    android:id="@+id/beauty_detail_read_more"
+                    android:layout_width="150dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+                
+	                <RelativeLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"
+	                    android:layout_marginRight="20dip"
+	                    android:background="@drawable/ico_more" />
+
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"
+	                    android:layout_marginRight="40dip"
+	                    android:text="@string/beauty_ichannel_brief_intro_read_more_btn_title"
+	                    android:textColor="@color/Fancl_Blue" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <RelativeLayout 
+          android:id="@+id/beauty_detail_text_size"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dip"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="10dip"
+          android:background="@drawable/btn_text_size"/>
+
+</RelativeLayout>

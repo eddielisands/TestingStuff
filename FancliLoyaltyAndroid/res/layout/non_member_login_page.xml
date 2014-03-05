@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include
+        layout="@layout/login_registration_bg" />
+    
+    <LinearLayout 
+        android:layout_width="294dip"
+        android:layout_height="273dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+              android:id="@+id/non_member_login_title"
+		      android:layout_height="0dip"
+		      android:layout_width="match_parent"
+		      android:layout_weight="1">
+		      
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:gravity="center"
+            android:text="@string/non_member_login_title"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+              android:id="@+id/non_member_login_msg"
+		      android:layout_height="0dip"
+		      android:layout_width="match_parent"
+		      android:layout_weight="2">
+		      
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/non_member_login_msg"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+              android:id="@+id/login_page_title"
+		      android:layout_height="0dip"
+		      android:layout_width="match_parent"
+		      android:layout_weight="1">
+		      
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+               
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                   
+                   <RelativeLayout
+                       android:id="@+id/cancel_btn"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="5dip"
+                       android:layout_width="107dip"
+                       android:layout_height="38dip"
+                       android:background="@drawable/btn_cancel" >
+                       
+                       <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_centerVertical="true"
+				            android:layout_centerHorizontal="true"
+				            android:gravity="center"
+				            android:text="@string/cancel_btn_title"
+				            android:textColor="@color/white"
+				            android:textStyle="bold"
+				            android:textSize="16sp" />
+                   		</RelativeLayout>
+                       
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                   <RelativeLayout
+                       android:id="@+id/continue_btn"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_marginLeft="5dip"
+                       android:layout_width="107dip"
+                       android:layout_height="38dip"
+                       android:background="@drawable/btn_confirm" >
+                       
+                       <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_centerVertical="true"
+				            android:layout_centerHorizontal="true"
+				            android:gravity="center"
+				            android:text="@string/continue_btn_title"
+				            android:textColor="@color/white"
+				            android:textStyle="bold"
+				            android:textSize="16sp" />
+                       </RelativeLayout>
+                </RelativeLayout>
+                
+               </LinearLayout>
+            
+        </RelativeLayout>
+        
+        </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/list_bar">
+
+        <TextView
+            android:id="@+id/category_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="New Campaign"
+            android:textColor="@color/Fancl_Blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/header_bottom_breakline"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"/>
+    
+    <RelativeLayout
+        android:id="@+id/new_number_indicator_bg"
+        android:layout_width="25dip"
+        android:layout_height="20dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/home_news_number_indicator">
+
+        <TextView
+            android:id="@+id/new_number_indicator_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="88"/>
+        
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/header_arrow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ico_arrow"/>
+
+</RelativeLayout>

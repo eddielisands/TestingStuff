@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/detail_bg" /> -->
+
+    <LinearLayout
+        android:id="@+id/qnaLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/qna_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/qna_complete"
+            android:textColor="@color/Fancl_Blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- <TextView
+            android:id="@+id/qna_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/qna_complete_content"
+            android:textColor="@color/Fancl_Grey"
+            android:textSize="13sp" /> -->
+        
+        <LinearLayout
+            android:id="@+id/qna_complete_answer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+ 
+        </LinearLayout>
+        
+        <TextView
+                android:id="@+id/qna_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/qna_complete_content"
+                android:textColor="@color/Fancl_Grey"
+                android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qnaLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/qna_restart"
+        android:textColor="@color/White"
+        android:background="@drawable/btn_restart" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reStartButton"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/breakline" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whats_hot_list_row"
+    android:layout_width="match_parent"
+    android:layout_height="86dip"
+    android:background="@color/Transparent" >
+
+    <RelativeLayout
+        android:id="@+id/list_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="81dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/list_bar" />
+
+    <RelativeLayout
+        android:id="@+id/list_bar_breakline"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/breakline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="93dip"
+                android:layout_height="64dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="8dip" >
+
+                <com.fancl.iloyalty.item.AsyncImageView
+                    android:id="@+id/list_bar_thumbnail"
+                    android:layout_width="93dip"
+                    android:layout_height="64dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/LightGrey"
+                    android:scaleType="fitCenter" />
+
+                <RelativeLayout
+                    android:id="@+id/list_bar_thumbnail_new_tag"
+                    android:layout_width="96dip"
+                    android:layout_height="32dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ico_new"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/list_bar_play_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/Transparent"
+                    android:src="@drawable/btn_play"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/list_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="110dip"
+                android:textColor="@color/Fancl_Blue"
+                android:text="Title"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_bar_arrow_btn"
+            android:layout_width="36dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_unread" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

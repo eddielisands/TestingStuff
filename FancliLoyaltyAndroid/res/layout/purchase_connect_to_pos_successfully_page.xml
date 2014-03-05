@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product_detail_bg"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/connect_success_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/Transparent"
+                android:gravity="center"
+                android:text="@string/purchase_connect_to_pos_successfully_title"
+                android:textColor="@color/Fancl_Blue"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.5">
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_connect"/>
+            
+            </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            
+            <RelativeLayout 
+                android:id="@+id/connect_success_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_sec_check">
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/confirm_btn_title"/>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.fancl.iloyalty"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_product" >
+
+            <com.fancl.iloyalty.item.AsyncImageView
+                android:id="@+id/product_detail_selective_image"
+                android:layout_width="166dp"
+                android:layout_height="124dp"
+                android:layout_centerInParent="true"
+                android:background="@color/LightGrey"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/Transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/product_detail_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Fancl_Grey"
+                android:textSize="14sp" />
+
+            <com.fancl.iloyalty.item.ViewFlow
+                android:id="@+id/product_detail_view_pager"
+                android:layout_width="115dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                android:gravity="center" >
+
+                <com.fancl.iloyalty.item.CircleFlowIndicator
+                    android:id="@+id/product_detail_view_pager_page_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    app:activeColor="@color/white"
+                    app:activeType="fill"
+                    app:circleSeparation="20dp"
+                    app:inactiveColor="@color/half_gray"
+                    app:inactiveType="fill"
+                    app:radius_viewflow="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

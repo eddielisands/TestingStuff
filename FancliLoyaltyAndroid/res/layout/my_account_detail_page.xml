@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            
+
+            <!-- Account Name -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+             android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/my_account_detail_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="" />
+
+            </LinearLayout>
+            
+            <!-- Member Id -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="@string/my_account_member_id_title" />
+               
+
+                    <TextView
+                        android:id="@+id/my_account_detail_member_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/Fancl_Blue"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="@string/my_account_membership_grade_title" />
+               
+
+                    <TextView
+                        android:id="@+id/my_account_detail_membership_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="" />
+               
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="@string/my_account_current_gift_point_title" />
+
+                    <TextView
+                        android:id="@+id/my_account_detail_current_point"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"  
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="" />
+               
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="@string/my_account_current_discount_point_title" />
+               
+                    <TextView
+                        android:id="@+id/my_account_detail_current_discount_point"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="" />
+              
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="@string/my_account_point_expiry_date_title" />
+                
+
+                    <TextView
+                        android:id="@+id/my_account_detail_expiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:textColor="@color/Fancl_Blue"
+                        android:text="" />
+              
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dip" />
+
+            <!-- First Table -->
+            <!-- First Name -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_up" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/Fancl_Blue"
+                            android:layout_marginLeft="10dip"
+                            android:text="@string/my_account_first_name" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/name_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:textColor="@color/Fancl_Grey"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Surname -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_last_name" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/surname_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:textColor="@color/Fancl_Grey"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Email -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_email_address" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/email_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:textColor="@color/Fancl_Grey"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Re-Entry Email -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_re_enter_email_address" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/retype_email_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:textColor="@color/Fancl_Grey"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Mobile Number -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_mobile_number" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/mobile_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:textColor="@color/Fancl_Grey"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- month birth -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_month_birth" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/month_birth_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:textColor="@color/Fancl_Grey"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- year birth -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_bottom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_year_birth" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/year_birth_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:textColor="@color/Fancl_Grey"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dip" />
+
+            <!-- Second Table -->
+    
+            <!-- Gender -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_up" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_gender" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sign_up_form_gender_button"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/my_account_gender_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="30dip"
+                            android:textColor="@color/Fancl_Grey"
+                            android:hint="" />
+
+                        <RelativeLayout
+                            android:id="@+id/my_account_gender_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/ico_triangle" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Skin Type -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_skin_type" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sign_up_form_skin_type_button"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/my_account_skin_type_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="30dip"
+                            android:textColor="@color/Fancl_Grey"
+                            android:hint="--" />
+
+                        <RelativeLayout
+                            android:id="@+id/my_account_skin_type_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/ico_triangle" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Living Country -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_country" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sign_up_form_living_country_button"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/my_account_living_country_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="30dip"
+                            android:textColor="@color/Fancl_Grey"
+                            android:hint="--" />
+
+                        <RelativeLayout
+                            android:id="@+id/my_account_living_country_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/ico_triangle" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Living City -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_city" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <EditText
+                            android:id="@+id/city_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="5dip"
+                            android:background="@color/Transparent"
+                            android:textColor="@color/Fancl_Grey"
+                            android:inputType="none|textNoSuggestions"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_div" />
+            </RelativeLayout>
+
+            <!-- Address 1 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="@color/Fancl_Blue"
+                            android:text="@string/my_account_address" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <EditText
+                            android:id="@+id/address1_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="5dip"
+                            android:textColor="@color/Fancl_Grey"
+                            android:background="@color/Transparent"
+                            android:inputType="none|textNoSuggestions"
+                            android:singleLine="true" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/table_div" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Address 2 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <EditText
+                            android:id="@+id/address2_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="5dip"
+                            android:background="@color/Transparent"
+                            android:textColor="@color/Fancl_Grey"
+                            android:inputType="none|textNoSuggestions"
+                            android:singleLine="true" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/table_div" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Address 3 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/table_bottom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/table_breakline" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <EditText
+                            android:id="@+id/address3_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="5dip"
+                            android:background="@color/Transparent"
+                            android:textColor="@color/Fancl_Grey"
+                            android:inputType="none|textNoSuggestions"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip" >
+
+                <RelativeLayout
+                    android:id="@+id/my_account_change_passward_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/table_mid" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_account_change_password"
+                        android:textColor="@color/Fancl_Blue" />
+                    
+                    <RelativeLayout
+                            android:id="@+id/my_account_change_password_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/ico_triangle" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

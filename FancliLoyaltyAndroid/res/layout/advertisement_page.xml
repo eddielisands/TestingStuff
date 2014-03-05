@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White" >
+    
+    <WebView
+        android:id="@+id/bannerWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LightGrey" />
+    
+    
+    
+    <com.fancl.iloyalty.item.AsyncImageView
+        android:id="@+id/banner_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:scaleType="fitXY" />
+    
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_cross" />
+
+</RelativeLayout>

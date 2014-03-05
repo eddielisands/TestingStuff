@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@color/Transparent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/list_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/list_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/list_bar_date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2012-12-12"
+                android:textColor="@color/Fancl_LightGrey"
+                android:textSize="12sp" />
+            
+            <TextView
+                android:id="@+id/list_bar_shop_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxx"
+                android:textColor="@color/Fancl_Blue"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_account_purchase_total"
+                    android:textColor="@color/Fancl_LightGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/list_bar_purchase_point_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/Fancl_LightGrey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+            <RelativeLayout
+                android:id="@+id/list_bar_arrow_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_arrow" />
+
+</RelativeLayout>

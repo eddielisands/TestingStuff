@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product_detail_bg"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/Fancl_Blue"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="@string/purchase_fail_to_connect_to_pos_title"/>
+            </RelativeLayout>
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.5">
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_connect_fail"/>
+            
+            </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            
+            <RelativeLayout 
+                android:id="@+id/try_again_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_sec_check">
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/try_again_btn_title"/>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

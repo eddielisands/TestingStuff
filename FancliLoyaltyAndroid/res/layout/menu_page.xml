@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_water"/>
+
+    <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	        <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="2">
+	            
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="100dip"
+	                android:orientation="horizontal">
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/product_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_product"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_product_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/magazine_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_magazine"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_fancl_magazine_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout
+	                    android:id="@+id/about_fancl_layout" 
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_fancl"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:text="@string/menu_about_fancl_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	            </LinearLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="2">
+	            
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="100dip"
+	                android:orientation="horizontal">
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/account_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_account"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_my_account_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/store_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_store"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_shop_locator_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/notification_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_notification"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_notification_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	            </LinearLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="2">
+	            
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="100dip"
+	                android:orientation="horizontal">
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/setting_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_setting"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_settings_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/qrcode_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_qr"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_qr_code_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/bookmark_layout"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                    <RelativeLayout 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="40dip"
+	                        android:background="@drawable/ico_bookmark"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="40dip"
+	                        android:layout_centerHorizontal="true"
+	                        android:layout_alignParentBottom="true"
+	                        android:layout_marginBottom="0dip"
+	                        android:gravity="center"
+	                        android:textColor="@color/Fancl_Grey"
+	                        android:text="@string/menu_bookmark_btn_title"/>
+	                    
+	                </RelativeLayout>
+	                
+	            </LinearLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="2">
+	            
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="100dip"
+	                android:orientation="horizontal">
+	                
+	                <RelativeLayout 
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout 
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout 
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1">	                    
+	                    
+	                </RelativeLayout>
+	                
+	            </LinearLayout>
+	            
+	        </RelativeLayout>
+	        
+	    </LinearLayout>
+    
+    </ScrollView>
+
+</RelativeLayout>

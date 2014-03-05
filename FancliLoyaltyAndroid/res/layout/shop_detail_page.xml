@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/detail_bg" /><ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/shopDetailLayout"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/shop_name_textview"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="shop name"
+                    android:textColor="@color/Fancl_Blue"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/mapButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Transparent"
+                    android:drawableLeft="@drawable/btn_map" >
+                </Button>
+            </LinearLayout>
+
+            <com.fancl.iloyalty.item.AsyncImageView
+                android:id="@+id/shop_thumbnail"
+                android:layout_width="280dip"
+                android:layout_height="142dip"
+                android:layout_marginTop="10dp"
+                android:background="@color/LightGrey" />
+
+            <ListView
+                android:id="@+id/shop_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="161dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.8" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_list_row"
+    android:layout_width="match_parent"
+    android:layout_height="52dip"
+    android:background="@color/Transparent" >
+
+    <RelativeLayout
+        android:id="@+id/list_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="81dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/list_bar" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="2013-06-05"
+        android:textSize="14sp"
+        android:textColor="@color/Fancl_LightGrey" />
+
+    <TextView
+        android:id="@+id/content_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/date_Textview"
+        android:text="Title"
+        android:textSize="14sp"
+        android:textColor="@color/Fancl_Blue" />
+
+</RelativeLayout>

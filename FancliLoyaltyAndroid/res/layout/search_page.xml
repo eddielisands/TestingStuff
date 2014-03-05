@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Gray" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusable="true" 
+            android:focusableInTouchMode="true"
+            android:background="@drawable/box_search" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/ico_mag"
+                android:scaleType="fitCenter" />
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_marginLeft="5dp"
+                android:imeOptions="actionDone"
+                android:background="@color/Transparent"
+                android:inputType="none|textNoSuggestions"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:ems="15" >
+
+                <!-- <requestFocus /> -->
+            </EditText>
+            
+            
+            
+        </RelativeLayout>
+        
+
+        
+        <!-- <RelativeLayout
+        android:id="@+id/search_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/White"
+        android:layout_below="@+id/search_layout">
+        </RelativeLayout> -->
+        
+        
+        
+        <ListView
+            android:id="@+id/search_result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_layout"
+            android:layout_marginTop="5dp"
+            android:background="@color/White" />
+        
+        
+
+    </RelativeLayout>
+    
+    
+    
+    
+
+</RelativeLayout>

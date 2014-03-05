@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_detail_bg" >
+
+    <RelativeLayout 
+        android:layout_width="218dip"
+        android:layout_height="366dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <com.fancl.iloyalty.item.ViewFlow
+            android:id="@+id/qna_detail_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+        </com.fancl.iloyalty.item.ViewFlow>
+
+    </RelativeLayout>
+    
+    <!-- <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/box_qna"> -->
+        
+        <!-- <LinearLayout 
+            android:layout_width="218dip"
+            android:layout_height="366dip"
+            android:orientation="vertical">
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="90dip">
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dip"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    android:text="第一步"/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="70dip">
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="選擇你的肌膚類型："/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="196dip">
+                
+                <ScrollView 
+                    android:layout_width="198dip"
+                    android:layout_height="176dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+                    
+                </ScrollView>
+                
+            </RelativeLayout>
+            
+        </LinearLayout> -->
+        
+    <!-- </RelativeLayout> -->
+    
+    <RelativeLayout 
+        android:id="@+id/qna_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/qna_arrow_lft"/>
+    
+    <RelativeLayout 
+        android:id="@+id/qna_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/qna_arrow_rgt"/>
+
+</RelativeLayout>

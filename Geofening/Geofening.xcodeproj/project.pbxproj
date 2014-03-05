@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFEB10921803DD7A0063C965 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB10911803DD7A0063C965 /* Foundation.framework */; };
+		EFEB10941803DD7A0063C965 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB10931803DD7A0063C965 /* CoreGraphics.framework */; };
+		EFEB10961803DD7A0063C965 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB10951803DD7A0063C965 /* UIKit.framework */; };
+		EFEB109C1803DD7A0063C965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFEB109A1803DD7A0063C965 /* InfoPlist.strings */; };
+		EFEB109E1803DD7A0063C965 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB109D1803DD7A0063C965 /* main.m */; };
+		EFEB10A21803DD7A0063C965 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB10A11803DD7A0063C965 /* AppDelegate.m */; };
+		EFEB10A51803DD7A0063C965 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEB10A31803DD7A0063C965 /* Main_iPhone.storyboard */; };
+		EFEB10A81803DD7A0063C965 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEB10A61803DD7A0063C965 /* Main_iPad.storyboard */; };
+		EFEB10AB1803DD7A0063C965 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB10AA1803DD7A0063C965 /* ViewController.m */; };
+		EFEB10AD1803DD7A0063C965 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEB10AC1803DD7A0063C965 /* Images.xcassets */; };
+		EFEB10B41803DD7A0063C965 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB10B31803DD7A0063C965 /* XCTest.framework */; };
+		EFEB10B51803DD7A0063C965 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB10911803DD7A0063C965 /* Foundation.framework */; };
+		EFEB10B61803DD7A0063C965 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB10951803DD7A0063C965 /* UIKit.framework */; };
+		EFEB10BE1803DD7A0063C965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFEB10BC1803DD7A0063C965 /* InfoPlist.strings */; };
+		EFEB10C01803DD7A0063C965 /* GeofeningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB10BF1803DD7A0063C965 /* GeofeningTests.m */; };
+		EFEB10CB1803E5A30063C965 /* GeofenceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEB10CA1803E5A30063C965 /* GeofenceMonitor.m */; };
+		EFEB10F31804215C0063C965 /* Fence3.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFEB10F01804215C0063C965 /* Fence3.gpx */; };
+		EFEB10F41804215C0063C965 /* Fence2.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFEB10F11804215C0063C965 /* Fence2.gpx */; };
+		EFEB10F51804215C0063C965 /* Fence1.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFEB10F21804215C0063C965 /* Fence1.gpx */; };
+		EFEB10F7180424CD0063C965 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB10F6180424CD0063C965 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFEB10B71803DD7A0063C965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFEB10861803DD7A0063C965 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFEB108D1803DD7A0063C965;
+			remoteInfo = Geofening;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFEB108E1803DD7A0063C965 /* Geofening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geofening.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEB10911803DD7A0063C965 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFEB10931803DD7A0063C965 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFEB10951803DD7A0063C965 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFEB10991803DD7A0063C965 /* Geofening-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Geofening-Info.plist"; sourceTree = "<group>"; };
+		EFEB109B1803DD7A0063C965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFEB109D1803DD7A0063C965 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFEB109F1803DD7A0063C965 /* Geofening-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Geofening-Prefix.pch"; sourceTree = "<group>"; };
+		EFEB10A01803DD7A0063C965 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFEB10A11803DD7A0063C965 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFEB10A41803DD7A0063C965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EFEB10A71803DD7A0063C965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EFEB10A91803DD7A0063C965 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFEB10AA1803DD7A0063C965 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFEB10AC1803DD7A0063C965 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFEB10B21803DD7A0063C965 /* GeofeningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeofeningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEB10B31803DD7A0063C965 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EFEB10BB1803DD7A0063C965 /* GeofeningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeofeningTests-Info.plist"; sourceTree = "<group>"; };
+		EFEB10BD1803DD7A0063C965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFEB10BF1803DD7A0063C965 /* GeofeningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeofeningTests.m; sourceTree = "<group>"; };
+		EFEB10C91803E5A30063C965 /* GeofenceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeofenceMonitor.h; sourceTree = "<group>"; };
+		EFEB10CA1803E5A30063C965 /* GeofenceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeofenceMonitor.m; sourceTree = "<group>"; };
+		EFEB10F01804215C0063C965 /* Fence3.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Fence3.gpx; sourceTree = "<group>"; };
+		EFEB10F11804215C0063C965 /* Fence2.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Fence2.gpx; sourceTree = "<group>"; };
+		EFEB10F21804215C0063C965 /* Fence1.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Fence1.gpx; sourceTree = "<group>"; };
+		EFEB10F6180424CD0063C965 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFEB108B1803DD7A0063C965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEB10F7180424CD0063C965 /* CoreLocation.framework in Frameworks */,
+				EFEB10941803DD7A0063C965 /* CoreGraphics.framework in Frameworks */,
+				EFEB10961803DD7A0063C965 /* UIKit.framework in Frameworks */,
+				EFEB10921803DD7A0063C965 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEB10AF1803DD7A0063C965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEB10B41803DD7A0063C965 /* XCTest.framework in Frameworks */,
+				EFEB10B61803DD7A0063C965 /* UIKit.framework in Frameworks */,
+				EFEB10B51803DD7A0063C965 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFEB10851803DD7A0063C965 = {
+			isa = PBXGroup;
+			children = (
+				EFEB10971803DD7A0063C965 /* Geofening */,
+				EFEB10B91803DD7A0063C965 /* GeofeningTests */,
+				EFEB10901803DD7A0063C965 /* Frameworks */,
+				EFEB108F1803DD7A0063C965 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFEB108F1803DD7A0063C965 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB108E1803DD7A0063C965 /* Geofening.app */,
+				EFEB10B21803DD7A0063C965 /* GeofeningTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFEB10901803DD7A0063C965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB10F6180424CD0063C965 /* CoreLocation.framework */,
+				EFEB10911803DD7A0063C965 /* Foundation.framework */,
+				EFEB10931803DD7A0063C965 /* CoreGraphics.framework */,
+				EFEB10951803DD7A0063C965 /* UIKit.framework */,
+				EFEB10B31803DD7A0063C965 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFEB10971803DD7A0063C965 /* Geofening */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB10F01804215C0063C965 /* Fence3.gpx */,
+				EFEB10F11804215C0063C965 /* Fence2.gpx */,
+				EFEB10F21804215C0063C965 /* Fence1.gpx */,
+				EFEB10A01803DD7A0063C965 /* AppDelegate.h */,
+				EFEB10A11803DD7A0063C965 /* AppDelegate.m */,
+				EFEB10A31803DD7A0063C965 /* Main_iPhone.storyboard */,
+				EFEB10A61803DD7A0063C965 /* Main_iPad.storyboard */,
+				EFEB10A91803DD7A0063C965 /* ViewController.h */,
+				EFEB10AA1803DD7A0063C965 /* ViewController.m */,
+				EFEB10AC1803DD7A0063C965 /* Images.xcassets */,
+				EFEB10981803DD7A0063C965 /* Supporting Files */,
+				EFEB10C91803E5A30063C965 /* GeofenceMonitor.h */,
+				EFEB10CA1803E5A30063C965 /* GeofenceMonitor.m */,
+			);
+			path = Geofening;
+			sourceTree = "<group>";
+		};
+		EFEB10981803DD7A0063C965 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB10991803DD7A0063C965 /* Geofening-Info.plist */,
+				EFEB109A1803DD7A0063C965 /* InfoPlist.strings */,
+				EFEB109D1803DD7A0063C965 /* main.m */,
+				EFEB109F1803DD7A0063C965 /* Geofening-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFEB10B91803DD7A0063C965 /* GeofeningTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB10BF1803DD7A0063C965 /* GeofeningTests.m */,
+				EFEB10BA1803DD7A0063C965 /* Supporting Files */,
+			);
+			path = GeofeningTests;
+			sourceTree = "<group>";
+		};
+		EFEB10BA1803DD7A0063C965 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB10BB1803DD7A0063C965 /* GeofeningTests-Info.plist */,
+				EFEB10BC1803DD7A0063C965 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFEB108D1803DD7A0063C965 /* Geofening */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFEB10C31803DD7A0063C965 /* Build configuration list for PBXNativeTarget "Geofening" */;
+			buildPhases = (
+				EFEB108A1803DD7A0063C965 /* Sources */,
+				EFEB108B1803DD7A0063C965 /* Frameworks */,
+				EFEB108C1803DD7A0063C965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geofening;
+			productName = Geofening;
+			productReference = EFEB108E1803DD7A0063C965 /* Geofening.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFEB10B11803DD7A0063C965 /* GeofeningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFEB10C61803DD7A0063C965 /* Build configuration list for PBXNativeTarget "GeofeningTests" */;
+			buildPhases = (
+				EFEB10AE1803DD7A0063C965 /* Sources */,
+				EFEB10AF1803DD7A0063C965 /* Frameworks */,
+				EFEB10B01803DD7A0063C965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFEB10B81803DD7A0063C965 /* PBXTargetDependency */,
+			);
+			name = GeofeningTests;
+			productName = GeofeningTests;
+			productReference = EFEB10B21803DD7A0063C965 /* GeofeningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFEB10861803DD7A0063C965 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = KH1386;
+				TargetAttributes = {
+					EFEB108D1803DD7A0063C965 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					EFEB10B11803DD7A0063C965 = {
+						TestTargetID = EFEB108D1803DD7A0063C965;
+					};
+				};
+			};
+			buildConfigurationList = EFEB10891803DD7A0063C965 /* Build configuration list for PBXProject "Geofening" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFEB10851803DD7A0063C965;
+			productRefGroup = EFEB108F1803DD7A0063C965 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFEB108D1803DD7A0063C965 /* Geofening */,
+				EFEB10B11803DD7A0063C965 /* GeofeningTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFEB108C1803DD7A0063C965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEB10A81803DD7A0063C965 /* Main_iPad.storyboard in Resources */,
+				EFEB10F31804215C0063C965 /* Fence3.gpx in Resources */,
+				EFEB10F41804215C0063C965 /* Fence2.gpx in Resources */,
+				EFEB10AD1803DD7A0063C965 /* Images.xcassets in Resources */,
+				EFEB10A51803DD7A0063C965 /* Main_iPhone.storyboard in Resources */,
+				EFEB10F51804215C0063C965 /* Fence1.gpx in Resources */,
+				EFEB109C1803DD7A0063C965 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEB10B01803DD7A0063C965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEB10BE1803DD7A0063C965 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFEB108A1803DD7A0063C965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEB10CB1803E5A30063C965 /* GeofenceMonitor.m in Sources */,
+				EFEB10AB1803DD7A0063C965 /* ViewController.m in Sources */,
+				EFEB10A21803DD7A0063C965 /* AppDelegate.m in Sources */,
+				EFEB109E1803DD7A0063C965 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEB10AE1803DD7A0063C965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEB10C01803DD7A0063C965 /* GeofeningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFEB10B81803DD7A0063C965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFEB108D1803DD7A0063C965 /* Geofening */;
+			targetProxy = EFEB10B71803DD7A0063C965 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFEB109A1803DD7A0063C965 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFEB109B1803DD7A0063C965 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EFEB10A31803DD7A0063C965 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFEB10A41803DD7A0063C965 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EFEB10A61803DD7A0063C965 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFEB10A71803DD7A0063C965 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EFEB10BC1803DD7A0063C965 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFEB10BD1803DD7A0063C965 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFEB10C11803DD7A0063C965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFEB10C21803DD7A0063C965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFEB10C41803DD7A0063C965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geofening/Geofening-Prefix.pch";
+				INFOPLIST_FILE = "Geofening/Geofening-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EFEB10C51803DD7A0063C965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geofening/Geofening-Prefix.pch";
+				INFOPLIST_FILE = "Geofening/Geofening-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EFEB10C71803DD7A0063C965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Geofening.app/Geofening";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geofening/Geofening-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeofeningTests/GeofeningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EFEB10C81803DD7A0063C965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Geofening.app/Geofening";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geofening/Geofening-Prefix.pch";
+				INFOPLIST_FILE = "GeofeningTests/GeofeningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFEB10891803DD7A0063C965 /* Build configuration list for PBXProject "Geofening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEB10C11803DD7A0063C965 /* Debug */,
+				EFEB10C21803DD7A0063C965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFEB10C31803DD7A0063C965 /* Build configuration list for PBXNativeTarget "Geofening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEB10C41803DD7A0063C965 /* Debug */,
+				EFEB10C51803DD7A0063C965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFEB10C61803DD7A0063C965 /* Build configuration list for PBXNativeTarget "GeofeningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEB10C71803DD7A0063C965 /* Debug */,
+				EFEB10C81803DD7A0063C965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFEB10861803DD7A0063C965 /* Project object */;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Transparent" >
+
+    <RelativeLayout
+        android:id="@+id/tw_sharing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/White"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/tw_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/Transparent"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/tw_cancel_btn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:background="@color/Gray"
+                android:gravity="center"
+                android:text="@string/cancel_btn_title"
+                android:textColor="@color/White"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tw_title_textview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/twitter"
+                android:textColor="@color/DarkGray" />
+
+            <Button
+                android:id="@+id/tw_share_btn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:background="@color/Gray"
+                android:gravity="center"
+                android:text="@string/share_btn_title"
+                android:textColor="@color/White"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tw_share_input"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/tw_title_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|top"
+            android:hint="Say something about this..."
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tw_remain_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tw_share_input"
+            android:layout_below="@id/tw_share_input"
+            android:text="140" />
+    </RelativeLayout>
+
+</RelativeLayout>

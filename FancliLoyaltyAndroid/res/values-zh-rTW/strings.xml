@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iFANCL</string>
+
+    
+    <!-- General -->
+    <string name="ok_btn_title">確定</string>
+    <string name="cancel_btn_title">取消</string>
+    <string name="confirm_btn_title">確認</string>
+    <string name="login_btn_title">登入</string>
+    <string name="continue_btn_title">繼續</string>
+    <string name="back_btn_title">返回</string>
+    <string name="share_btn_title">分享</string>
+    <string name="finish_btn_title">完成</string>
+    <string name="edit_btn_title">編輯</string>
+    <string name="save_btn_title">保存</string>
+    <string name="newest_btn_title">最新</string>
+    <string name="oldest_btn_title">最舊</string>
+    <string name="try_again_btn_title">重試</string>
+    <string name="security_check_btn_title">輸入代碼</string>
+    <string name="done_btn_title">完成</string>
+    <string name="accept_btn_title">同意</string>
+
+    <!-- Menu Icon -->
+    <string name="menu_ibeauty_credit_btn_title">愛‧生活-積分奬賞</string>
+    <string name="menu_product_btn_title">產品資訊</string>
+    <string name="menu_fancl_magazine_btn_title">生活雜誌</string>
+    <string name="menu_my_account_btn_title">我的賬戶</string>
+    <string name="menu_shop_locator_btn_title">店舖位置</string>
+    <string name="menu_about_fancl_btn_title">品牌特色</string>
+    <string name="menu_notification_btn_title">我的訊息</string>
+    <string name="menu_settings_btn_title">設定</string>
+    <string name="menu_qr_code_btn_title">QR掃瞄器</string>
+    <string name="menu_bookmark_btn_title">我的收藏</string>
+
+    <!-- Tab Bar -->
+    <string name="whats_hot_btn">人氣焦點</string>
+    <string name="promotion_btn">精選優惠</string>
+    <string name="beauty_ichannel_btn">FANCL 頻道</string>
+    <string name="more_btn">更多</string>
+
+    <!-- Welcome Page -->
+    <string name="welcome_page_title">歡迎使用</string>
+    <string name="fancl_iloyalty_title">iFANCL</string>
+    <string name="welcome_page_sign_up_btn_title">首次登記</string>
+    <string name="welcome_page_login_btn_title">登入</string>
+    <string name="non_member_login_btn_title">未成為FANCL會員?</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_title">iFANCL會員</string>
+    <string name="sign_up_welcome_title">歡迎加入iFANCL</string>
+    <string name="sign_up_hint_title">輸入會員卡或新會員收據上的會員編號</string>
+    <string name="sign_up_welcome_userguide_title">歡迎</string>
+    <string name="sign_up_welcome_userguide_msg">歡迎您成為iFANCL會員！您可以於香港或澳門任何一間店舖以iFANCL購物及尊享精彩優惠！</string>
+    <string name="title_activity_sign_up_enter_member_id">SignUpEnterMemberID</string>
+    <string name="sign_up_scan_member_id_msg">掃描新會員收據上的QR條碼直接取得會員編號？按取消即可直接輸入</string>
+
+    <!-- Login -->
+    <string name="login_page_title">iFANCL 會員登入</string>
+    <string name="login_email_field_title">登記電郵</string>
+    <string name="login_password_field_title">密碼</string>
+    <string name="login_page_forget_password_btn_title">忘記密碼?</string>
+    <string name="login_tos_page_back_msg">登記程序還未完成，決定取消iFANCL登記？</string>
+
+    <!-- Forget Password -->
+    <string name="login_forget_password_title">忘記密碼</string>
+    <string name="login_forget_password_phone_field_title">手提號碼或會員編號</string>
+    <string name="login_forget_password_email_field_title">登記電郵</string>
+    <string name="login_forget_password_new_password_title">新密碼會發送至您的登記電郵</string>
+
+    <!-- Non Member Login -->
+    <string name="non_member_login_title">非會員登入</string>
+    <string name="non_member_login_msg">只要購物滿$100便可成為\nFANCL會員\n如為非會員啟用，某些功能不能\n使用，敬請諒解。</string>
+
+    <!-- Enter Profile Info -->
+    <string name="enter_profile_info_member_id_title">會員編號:</string>
+    <string name="enter_profile_info_registered_title">Registered</string>
+    <string name="enter_profile_info_name_title">帳戶名稱:</string>
+    <string name="enter_profile_personal_information_title">個人資料</string>
+    
+    <!-- Card Replace -->
+    <string name="card_replace_update_success">您巳成功登記iFANCL會員</string>
+    <string name="card_replace_your_new_member_id">你的全新iFANCL會員編號為:</string>
+    <string name="card_replace_register_loading">登記已進入最後階段，啟動程序正在處理中，請耐心等待，謝謝！</string>
+
+    <!-- Network Connection -->
+    <string name="no_network_connection">Connection failed. Please check your network connection.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">設定</string>
+    <string name="title_activity_sign_up_enter_member_id">SignUpEnterMemberID</string>
+
+    <!-- Hot News Detail -->
+    <string name="hot_news_detail_play_video_title">播放影片</string>
+    <string name="whats_hot_category_new_campaign">品牌動向</string>
+    <string name="whats_hot_category_new_product">人氣產品</string>
+    <string name="whats_hot_category_new_reading">熱播視頻</string>
+    <string name="whats_hot_category_new_promotion">最新推廣</string>
+    <string name="whats_hot_category_new_magazine">生活雜誌</string>
+
+    <!-- Promotion -->
+    <string name="promotion_point_gift_available_view_point_btn_title">查看我的積分</string>
+    <string name="promotion_vip_promotion_tab_bar_title">我的尊享推廣</string>
+    <string name="promotion_icoupon_tab_bar_title">我的優惠卷</string>
+    <string name="promotion_latest_promotion_tab_bar_title">最新優惠</string>
+    <string name="promotion_latest_promotion_point_gift_sub_tab_bar_title">換領禮品</string>
+    <string name="promotion_latest_promotion_skincare_promotion_sub_tab_bar_title">產品推廣</string>
+    <string name="promotion_latest_promotion_fs_promotion_sub_tab_bar_title">FS Promotion</string>
+    <string name="promotion_detail_valid">推廣期至:</string>
+    <string name="promotion_detail_coupon_no">優惠劵編號:</string>
+    <string name="promotion_detail_gift_point_required">所需積分:</string>
+    <string name="promotion_detail_gift_name">禮品:</string>
+    <string name="promotion_detail_answer_all_questions">請回答所有問題</string>
+    <string name="promotion_detail_redeem_btn_title">換領</string>
+    <string name="promotion_detail_quantity">數量:</string>
+    <string name="promotion_detail_gift_code">禮品編號:</string>
+    <string name="promotion_detail_gift_point_deducted">禮品積分扣減:</string>
+
+    <!-- Purchase -->
+    <string name="purchase_title">開始購物</string>
+    <string name="offline_btn_title">Offline</string>
+    <string name="go_to_pos">掃描FANCL收銀機的QR碼</string>
+    <string name="purchase_waiting_response_title">正在連接至\n</string>
+    <string name="purchase_waiting_response_shop_title">分店收銀機</string>
+    <string name="purchase_waiting_response_msg">等待連接中...</string>
+    <string name="purchase_connect_to_pos_successfully_title">已成功連接到</string>
+    <string name="purchase_connect_to_pos_successfully_shop_title">分店收銀機,您可以按「確認」完成作操作並返回主頁</string>
+    <string name="purchase_fail_to_connect_to_pos_title">未能成功連接收銀台。\n請再試一次。</string>
+    <string name="purchase_try_again_fail_title">過程中出現問題</string>
+    <string name="purchase_try_again_fail_msg">網絡現時不穩定，須輸入代碼繼續</string>
+    <string name="purchase_enter_4_digit_key_title">輸入FANCL提供的代碼</string>
+    <string name="purchase_9_digit_security_code_title">9位數字的認證碼</string>
+    <string name="purchase_9_digit_security_code_msg">請出示安全碼</string>
+    <string name="purchase_offline_alert_msg">如遇上技術性問題, 可考慮按此轉為以輸入代碼繼續進行連接?</string>
+    <string name="purchase_invalid_qr_code">此QR碼無效，請檢查後再試</string>
+
+    <!-- Beauty iChannel -->
+    <string name="beauty_ichannel_brief_intro_read_more_btn_title">了解更多</string>
+    <string name="beauty_ichannel_detail_related_product_btn_title">相關產品或優惠</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="beauty_fancl_magazine_tab_bar_title">品牌動態</string>
+    <string name="beauty_beauty_tips_tab_bar_title">名人。說美</string>
+    <string name="beauty_fancl_tv_tab_bar_title">明星。生活</string>
+    <string name="beauty_fancl_search_hint">搜尋視頻</string>
+
+    <!-- Detail -->
+    <string name="read_more">了解更多</string>
+    <string name="related">相關</string>
+    <string name="play_video">播放影片</string>
+    <string name="gp_record">查看我的積分</string>
+    <string name="related_information">資訊</string>
+    <string name="related_product">產品</string>
+
+    <!-- TOS -->
+<!-- 	<string name="login_tos">有關iFANCL會員需知：\n\n1	此iFANCL手機電子會員卡只適用於FANCL香港及澳門專門店每個iFANCL會藉只限用於一部手機，即此登記手機，並且不能轉讓會藉予他人。\n2	以iFANCL手機電子會員卡購物每滿折實價港幣$100，即可獲取禮品積分及折扣積分各 1 個，累積之禮品積分及折扣積分有效期為一年。例如：閣下於 2013 年 5 月 10 日申請會員卡，累積之禮品及折扣積分將於 2014 年 5 月 31 日到期。\n3	禮品積分必須於到期日前換領禮品，逾期無效。禮品積分於到期日後將會重新計算。\n4	所享有的尊享折扣優惠以一年為限，當會籍的到期日過後，便根據以上方法調整下一年度享有之折扣優惠。折扣積分於提升會籍後將會重新計算。\n5	不同會員卡(包括普通會員卡及iFANCL手機電子會員卡)內的積分不可合併使用。\n6	作為iFANCL會員尊享的特別優惠及服務，我們將向您提供有關產品以及服務相關的資訊及優惠等推廣資料。\n7	當閣下使用iFANCL手機程式即表示同意受本公司之私穩政策聲明、條款及及細則。請於”有關FANCL”項目中細閱條款及條件等資料。\n8	FANCL保留權利隨時修改使用此會員卡之條例而無須另行通知。 \n\n有關條款及細則 (“本條款”) \n\n歡迎進入 iFANCL \n\n透過進入或使用本網站，閣下確認已閱讀、明白及同意受本條款及Fantastic Natural Cosmetics Limited (\"FANCL\") 的私隱政策本條款所約束。\n\n1.私隱 \n請閱讀FANCL的私隱政策，了解FANCL的私隱慣例。 \n\n2.會員登記\n閣下如透過本網站登記成為FANCL會員，閣下必須注意以下事項:\n(i) 所提供的登記資料必須為完整及準確;\n(ii) 閣下須於首次登記時輸入密碼，該密碼將會用作於核實閣下為FANCL會員之身份並允許登入會員網站;\n(iii) 閣下亦可於完成首次登記後隨時更改密碼;\n(iv) 必須妥善保存閣下之密碼，無論任何時間或情況下，閣下均不得將密碼向其他人士披露;\n(v) 已授權FANCL假設任何以閣下之會員號碼及密碼使用本網站的人士均是閣下或已獲得閣下授權代表的人士。\n\n3.有關會員會籍轉移至FANCL手機程式(“iFANCL”)\nFANCL將推出iFANCL作為會員登記會籍之嶄新模式。而現有會員將陸續使用iFANCL手機程式，閣下了解每個會員會籍只可同時登記於一部手機，完成登記後現有會員將會更新為iFANCL之會員會籍，其後所獲的積分亦將會累積於iFANCL之會員會籍。\n\n4.有關iFANCL會員尊享之推廣優惠，閣下必須注意以下事項:\n(i) 所有會員尊享優惠的有效期限只適用於該次推廣活動指明之優惠推廣期內。\n(ii) iFANCL會員尊享優惠只爲特選會員所使用，不能轉讓予其他人，並只限使用一次。\n(iii) 使用iFANCL會員尊享優惠時，必須出示iFANCL 提供之完整產品優惠券或現金優惠券編號方屬有效\n(iv) 特定產品優惠券之價格扣減優惠計算方法: FANCL會先扣減該特定產品優惠券之金額，然後再計算會員折扣，讓會員尊享雙重優惠。\n(v) 產品推廣優惠券之優惠不可兌換現金，亦不可與其他現金券同時使用。\n(vi) 現金優惠券扣減上限為所列明的港元面值，如在FANCL澳門專門店使用，即作葡幣面值使用。\n(vii) 如有任何爭議，FANCL保留最終決定權\n\n5.推廣活動\n本網站可能提供推廣活動，參加者需同意有關條款方可參與\n\n6.知識產權\n本網站所載的所有資料和內容（統稱\"所有內容\"），均受版權及可能涉及的其他知識產權(「知識產權」)所限制。而該版權屬FANCL所擁有。在未經FANCL事先給予的書面同意下，所有內容及本網站的任何部份之全部或部份，均不可被使用、複製、銷售、轉售、存取、展示、修改或以其他方式利用作任何用途。\n\n7.閣下的義務及責任\n閣下進入或使用本網站，即須遵從本條款及於本網站所發佈的進入或使用之特別警告或指示。閣下須根據法律、慣例及本著真誠行事。如閣下因疏忽或故意違反本條款或以任何方式損害本網站的完整性或運作，閣下須對FANCL所造成的所有損失及損害負責。\n\n8.第三方連結\nFANCL無須為與本網站連結之任何站外網頁或任何其他網站的內容負責。本網站所出現的連結僅為方便，並不代表FANCL認可相關內容、產品、服務或供應商。閣下須自行承擔與任何站外網頁或任何其他網站連結之風險。FANCL並無責任檢查或評估亦不保證與本網站連結的站外網頁或任何其他網站的售賣品，FANCL亦不會就該等網頁及網站的行動、內容、產品或服務（包括但不限於其私隱政策及任何條款）負上任何責任或法律責任。閣下應小心查閱閣下瀏覽的所有站外網頁及其他網站之任何條款及私隱政策。\n\n9.聲明、保證及責任限制\nFANCL不就本條款或本網站作任何種類的聲明或保證（明示或隱含的）。FANCL會採取合理可行之程序，盡量確保與本網站有關之系統已裝置足夠之保安設施，並於系統運作時，對有關風險予以監控。閣下同意，在適用法律所容許的最大範圍內，FANCL在任何情況下將不會就任何(a)業務受干擾；(b)進入本網站延誤或中斷；(c)數據傳送失敗、錯誤傳送、訛誤、破壞或其他修改；(d)因與本網站有往來或本網站所出現的站外連結而招致之任何類型的損失或損害；(e)與閣下使用本網站有關（包括在與第三者網站進行超連結期間）而可能發生之電腦病毒、系統失靈或失常；(f)內容的任何不準確或遺漏或(g)FANCL所不能合理控制的事情，而負上任何責任或法律責任（不論基於合約、侵權行為（包括疏忽）或其他方面的）。\n\n10.管轄法律、司法管轄權及爭議\n凡與本網站、本條款所預期的所有權利和責任及所有行動有關之任何爭議，均受當地法律所規管。凡與閣下瀏覽本網站有關之任何爭議，均須透過當地保密仲裁解決。\nwww.fancl-hk.com及iFANCL之當地法律指香港特別行政區法律\nwww.fancl.com.cn 之當地法律指中华人民共和国法律\n\n11.一般\n閣下確認並同意本條款構成FANCL與閣下之間有關閣下使用本網站之完整及獨有的協議，且替代及規管所有先前的建議、協議或其他通訊。FANCL保留更改本網站發佈的內容及更改本條款之權利。任何更改，立即生效。閣下其後繼續使用本網站構成閣下同意所有該等已更改的條款。FANCL可在給予或不給予事先通知下，終止本條款所授予的任何權利。閣下應立即遵從任何終止或其他通知。本條款之內容不得被詮釋為閣下與FANCL之間設立任何代理關係、合夥關係或其他合作企業形式。FANCL未能要求閣下履行本協議的任何條文，並不影響FANCL在其後的任何時候要求該履行之全部權利，而FANCL對違反本協議的任何條文之寬免不得被當作為或被視為對該條文本身之放棄。本條款之各項條文均為獨立及可予分割，如在任何時間，任何一項條款在任適用法律下或被任何適用仲裁裁決或法院決定判定為不能執行或無效，餘下條文之有效性、合法性及可強制執行性，在任何方面均不得受到影響或損害。\n\n12.適用文本\n本章則之英文本與中文譯本文義如有歧異，概以英文本為準\n\n如閣下對本條款有任何疑問，請致函至FANCL尖沙咀郵政局郵政信箱98732號查詢。</string>
+ -->    
+    <string name="login_tos">iFANCL使用及進入條款及細則 (“本條款”)*\n\n歡迎進入www.fancl-hk.com或www.fancl.com.cn或 iFANCL (FANCL網站)\n\n透過進入或使用本網站，閣下確認已閱讀、明白及同意受本條款所約束。\n\n1.會員登記\n閣下如透過本網站登記成為FANCL會員，閣下必須注意以下事項:\n(i) 所提供的登記資料必須為完整及準確;\n(ii) 必須於首次登記時輸入密碼，該密碼將會用作於核實閣下為FANCL會員之身份並允許登入會員網站;\n(iii) 完成首次登記後，亦可隨時更改密碼;\n(iv) 必須妥善保存閣下之密碼，無論任何時間或情況下，閣下均不得將密碼向其他人士披露;\n(v) 已授權我們假設任何以閣下之會員號碼及密碼使用FANCL網站的人士均是閣下或已獲得閣下授權代表的人士。\n\n2.有關會員會籍轉移至FANCL手機程式(“iFANCL”)\n我們將推出iFANCL作為會員登記會籍之嶄新模式，而現有會員將陸續使用iFANCL手機程式。閣下了解每個會員會籍只可同時登記於一部手機，完成登記後現有會員將會更新為iFANCL之會員會籍，其後所獲的積分亦將會累積於iFANCL L之會員會籍。\n\n3.有關iFANCL會員尊享之推廣優惠，閣下必須注意以下事項:\n(i) 所有會員尊享優惠的有效期限只適用於該次推廣活動指明之優惠推廣期內。\n(ii) iFANCL會員尊享優惠只爲特選會員所使用，不能轉讓予其他人，並只限使用一次。\n(iii) 使用iFANCL會員尊享優惠時，必須出示iFANCL 提供之完整產品優惠券或現金優惠券編號方屬有效\n(iv) 特定產品優惠券之價格扣減優惠計算方法: 我們會先扣減該特定產品優惠券之金額，然後再計算會員折扣，讓會員尊享雙重優惠。\n(v) 產品推廣優惠券之優惠不可兌換現金，亦不可與其他現金券同時使用。\n(vi) 現金優惠券扣減上限為所列明的港元面值，如在FANCL澳門專門店使用，即作葡幣面值使用。如優惠券面值是$100港元，在澳門專門店即可作$100葡幣使用。\n(vii) 如有任何爭議，我們保留最終決定權。\n\n4.推廣活動\nFANCL網站可能提供推廣活動，參加者需同意有關條款方可參與。\n\n5.知識產權\nFANCL網站所載的所有資料和內容（統稱\"所有內容\"），均受版權及可能涉及的其他知識產權 (「知識產權」) 所限制。而該版權屬我們所擁有。在未經我們事先給予的書面同意下，所有內容及本網站的任何部份之全部或部份，均不可被使用、轉載、複製、抄襲、銷售、轉售、存取、修改或以其他方式利用作任何用途。\n\n6. 閣下的義務及責任\n閣下進入或使用FANCL網站，即須遵從本條款及於本網站所發佈的進入或使用之特別警告或指示。閣下須根據法律、慣例及本著真誠行事。閣下不可作任何更改或修改本網站或任何內容或本網站的所出現服務，並不得以任何方式削弱本網站的完整性或運作。在不局限上文的原則下本條款的任何條文的一般性，如閣下因疏忽或故意違反本條款任何的義務，閣下須對我們所造成的所有損失及損害負責。\n\n7.第三方連結\n我們無須為與FANCL網站連結之任何站外網頁或任何其他網站的內容負任何責任或法律責任。FANCL網站所出現的連結僅為方便，並不代表我們認可相關內容、產品、服務或供應商。閣下須自行承擔與任何站外網頁或任何其他網站連結之風險。我們並無責任檢查或評估亦不保證與FANCL網站連結的站外網頁或任何其他網站的售賣品，我們亦不會就該等網頁及網站的行動、內容、產品或服務（包括但不限於其私隱政策及任何條款）負上任何責任或法律責任。閣下應小心查閱閣下瀏覽的所有站外網頁及其他網站之任何條款及私隱政策。\n\n8.個人資料（私隱）政策聲明\n我們將確保其工作人員遵守嚴格的標準，尊重閣下向我們提交的個人資料並確保其安全性和保密性。\n我們將依照收集該等資料時之目的繼續使用閣下的個人資料，包括向閣下提供有關產品以及售後服務的消息、資訊及推廣資料、我們或我們的關聯公司的新服務。\n\n9.聲明、保證及責任限制\n我們不就本條款或本網站作任何種類的聲明或保證（明示或隱含的）。我們會採取合理可行之程序，盡量確保與本網站有關之系統已裝置足夠之保安設施，並於系統運作時，對有關風險予以監控。\n閣下同意，在適用法律所容許的最大範圍內，我們在任何情況下將不會就任何(i)業務受干擾；(ii)進入本網站延誤或中斷；(iii)數據傳送失敗、錯誤傳送、訛誤、破壞或其他修改；(iv)因與本網站有往來或本網站所出現的站外連結而招致之任何類型的損失或損害；(v)與閣下使用本網站有關（包括在與第三者網站進行超連結期間）而可能發生之電腦病毒、系統失靈或失常；(vi)內容的任何不準確或遺漏或誤導、虛假或欺騙性陳述內容；(vii)我們所不能合理控制的事情，而負上任何責任或法律責任（不論基於合約、侵權行為（包括疏忽）或其他方面的）。\n\n10.管轄法律、司法管轄權及爭議\n凡與FANCL網站的所有使用及進入、本條款所預期的所有權利和責任及所有行動有關之任何爭議，均受當地法律所規管。凡與閣下瀏覽FANCL網站有關之任何爭議，均須透過當地保密仲裁解決。\nwww.fancl-hk.com及iFANCL之當地法律指香港特別行政區法律\nwww.fancl.com.cn 之當地法律指中华人民共和国法律\n\n11.一般\n閣下確認並同意本條款構成我們與閣下之間有關閣下使用本網站之完整及獨有的協議，並且替代及規管所有先前的建議、協議或其他通訊。\n我們保留更改本網站發佈的內容及更改本條款之權利。任何更改，立即生效。閣下其後繼續使用本網站構成閣下同意所有該等已更改的條款。我們可在給予或不給予事先通知下，終止本條款所授予的任何權利。閣下應立即遵從任何終止或其他通知。\n本條款之內容不得被詮釋為閣下與我們之間設立任何代理關係、合夥關係或其他合作企業形式。我們未能要求閣下履行本協議的任何條文，並不影響我們在其後的任何時候要求該履行之全部權利，而我們對違反本協議的任何條文之寬免不得被當作為或被視為對該條文本身之放棄。本條款之各項條文均為獨立及可予分割，如任何一項條款在任何適用之法律下被仲裁裁決或法院決定判定為不能執行或無效，餘下條文之有效性、合法性及可強制執行性，在任何方面均不得受到影響或損害。\n\n12.適用文本\n本章則之英文本與中文譯本文義如有歧異，概以英文本為準\n\n如閣下對本條款有任何疑問，請致函至我們尖沙咀郵政局郵政信箱98732號查詢。\n\n*FANCL網站是由無添加化妝品有限公司擁有及經營。</string>
+	
+	<!-- Setting -->
+    <string name="setting">設定</string>
+    <string name="language">語言</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="email_receipt">收取電郵單據</string>
+    <string name="language_tc">繁體</string>
+    <string name="language_sc">简体</string>
+    <string name="language_en">English</string>
+    <string name="logout">登出</string>
+    
+    <!-- Favourite -->
+    <string name="favourite_qr">QR掃描紀錄</string>
+    <string name="favourite_my">我的收藏</string>
+
+    <!-- Shop Location -->
+    <string name="locate_store">找尋最近我的商店</string>
+    <string name="shop_address">店鋪地址</string>
+    <string name="shop_phone">電話號碼</string>
+    <string name="shop_hour">營業時間</string>
+    <string name="shop_map">地圖</string>
+
+    <!-- Product -->
+    <string name="product_seasonal_picks_tab_bar_title">當季精選</string>
+    <string name="product_qna_tab_bar_title">了解我的需要</string>
+    <string name="product_catalogue_tab_bar_title">產品分類</string>
+    <string name="product_function">功效:</string>
+    <string name="product_howtouse">使用方法:</string>
+    <string name="product_ingredients">成分:</string>
+    <string name="distance">約距離 \</string>
+    <string name="meter">\  米</string>
+    <string name="qna_start">開始</string>
+    <string name="qna_title">了解皮膚‧更懂護膚</string>
+    <string name="qna_intro">了解自己的皮膚性質，準確掌握肌膚問題是美肌的第一步；歡迎到任何一間FANCL分店享用我們為您提供的專業皮膚分析服務。</string>
+    <string name="qna_bar_title">Q &amp; A</string>
+    <string name="qna_step">第</string>
+    <string name="qna_step_2">步</string>
+    <string name="qna_complete">測試完成</string>
+    <string name="qna_complete_question">題</string>
+    <string name="qna_restart">重新開始</string>
+    <string name="qna_complete_content">了解皮膚‧更懂護膚</string>
+    <string name="product_search_hint">搜尋產品名稱或編號</string>
+    <string name="product_color">顏色</string>
+
+    <!-- Youtube -->
+    <string name="error_thumbnail_view">There was an error initializing the YouTubeThumbnailView (%1$s)</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <!-- Magazine -->
+    <string name="espoir_magazine">ESPOIR 美容生活雜誌</string>
+    <string name="fh_magazine">F&amp;H 健康生活雜誌</string>
+
+    <!-- Scanning QRCode -->
+    <string name="qrcode_title">QR碼掃描器</string>
+    <string name="scan_to_more">掃描以閱讀更多</string>
+
+    <!-- Sharing Panel -->
+    <string name="facebook_title">\		分享至Facebook</string>
+    <string name="twitter_title">\		分享至Twitter</string>
+    <string name="email_title">\		電郵給朋友</string>
+    <string name="favourite_title">加入我的收藏</string>
+    
+    <!-- My Account -->
+    <string name="my_account_record_tab_bar_title">我的購買記錄</string>
+    <string name="my_account_gp_reward_tab_bar_title">禮品積分獎賞</string>
+    <string name="my_account_detail_tab_bar_title">帳戶內容</string>
+    <string name="my_account_member_id_title">會員編號: </string>
+    <string name="my_account_membership_grade_title">會籍級別: </string>
+    <string name="my_account_current_gift_point_title">現存禮品積分: </string>
+    <string name="my_account_point_expiry_date_title">積分到期日: </string>
+    <string name="my_account_bonus_point_record">禮品積分紀錄</string>
+    <string name="my_account_current_discount_point_title">累積折扣積分: </string>
+    <string name="my_account_edit_profile">編輯個人資料</string>
+    <string name="my_account_please_enter_password">為保障您的個人資料,請輸入密碼以進行資料更新</string>
+    <string name="my_account_forget_password">忘記密碼</string>
+    <string name="my_account_electronic_receipt">電子收據</string>
+    <string name="my_account_old_password">舊密碼:</string>
+    <string name="my_account_new_password">新密碼:</string>
+    <string name="my_account_re_enter_password">重新輸入新密碼:</string>
+    <string name="my_account_first_name">名字</string>
+    <string name="my_account_last_name">姓氏</string>
+    <string name="my_account_month_birth">出生月份</string>
+    <string name="my_account_year_birth">出生年份</string>
+    <string name="my_account_gender">性別</string>
+    <string name="my_account_skin_type">皮膚類型</string>
+    <string name="my_account_country">居住國家</string>
+    <string name="my_account_city">居住城市</string>
+    <string name="my_account_address">地址</string>
+    <string name="my_account_email_address">電郵</string>
+    <string name="my_account_re_enter_email_address">重新輸入電郵</string>
+    <string name="my_account_mobile_number">手機號碼</string>
+    <string name="my_account_change_password">更改密碼</string>
+    <string name="my_account_purchase_total">總計：HK $</string>
+    <string name="my_account_purchase_no_receipt_available">此購物未有i-receipt</string>
+    
+    <!-- Alert -->
+    <string name="alert_content_expired">內容已過期</string>
+    <string name="alert_contact_us_call">致電客戶服務熱線:</string>
+    <string name="alert_contact_us_call_time">服務時間：上午9時至下午6時</string>
+    <string name="alert_reg_first_name_empty">請輸入您的名字</string>
+    <string name="alert_reg_email_empty">請輸入您的電郵地址</string>
+    <string name="alert_reg_mobile_no_empty">請輸入您的手機號碼</string>
+    <string name="alert_reg_password_empty">請輸入您的密碼</string>
+    <string name="alert_reg_gender_empty">請輸入您的性別</string>
+    <string name="alert_submit_success">提交成功</string>
+    <string name="alert_no_record">沒有紀錄</string>
+    <string name="alert_confirm_logout">你確定要登出嗎?</string>
+    
+    <!-- About Fancl -->
+    <string name="about_fancl_contact_us">聯絡我們</string>
+    
+    
+</resources>

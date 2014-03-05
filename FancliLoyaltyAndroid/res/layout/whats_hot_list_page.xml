@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product_detail_bg" />
+
+    <ListView
+        android:id="@+id/whats_hot_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/Transparent"
+        android:divider="@color/Transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/Transparent"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

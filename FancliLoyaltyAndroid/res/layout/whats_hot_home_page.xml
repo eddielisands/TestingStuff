@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.fancl.iloyalty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.fancl.iloyalty.item.ViewFlow
+            android:id="@+id/viewflow_loop"
+            android:layout_width="match_parent"
+            android:layout_height="168dp" >
+        </com.fancl.iloyalty.item.ViewFlow>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_indicator"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <com.fancl.iloyalty.item.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="@color/white"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="@color/half_gray"
+                app:inactiveType="fill"
+                app:radius_viewflow="4dip" />
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/whats_hot_home_page_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/Transparent"
+            android:divider="@color/Transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/Transparent"
+            android:scrollingCache="false" >
+        </ExpandableListView>
+    </LinearLayout>
+
+</RelativeLayout>

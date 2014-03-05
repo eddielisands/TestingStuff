@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:background="@color/LightGrey" >
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:text="shop"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/Fancl_Grey" />
+    
+    <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/ico_arrow" />
+</RelativeLayout>
+
+
+ 

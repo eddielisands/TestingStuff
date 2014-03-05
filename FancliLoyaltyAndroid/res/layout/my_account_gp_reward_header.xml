@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+     
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+         
+         <TextView
+             android:id="@+id/account_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="10dp"
+             android:textStyle="bold"
+             android:textColor="@color/Fancl_Blue" />
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/member_id_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/my_account_member_id_title"
+                 android:textColor="@color/Fancl_Blue" />
+
+             <TextView
+                 android:id="@+id/member_id"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/Fancl_Blue" />
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/membership_grade_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/my_account_membership_grade_title"
+                 android:textColor="@color/Fancl_Blue" />
+
+             <TextView
+                 android:id="@+id/membership_grade"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/Fancl_Blue" />
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/current_point_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/my_account_current_gift_point_title"
+                 android:textColor="@color/Fancl_Blue" />
+
+             <TextView
+                 android:id="@+id/current_point"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/Fancl_Blue" />
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/expiry_date_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/my_account_point_expiry_date_title"
+                 android:textColor="@color/Fancl_Blue" />
+
+             <TextView
+                 android:id="@+id/expiry_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/Fancl_Blue" />
+         </LinearLayout>
+         
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="15dp"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/breakline" />
+         
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:textSize="18sp"
+             android:layout_marginTop="8dp"
+             android:text="@string/my_account_bonus_point_record"
+             android:textColor="@color/Fancl_Blue" />
+         
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/breakline" />
+</LinearLayout>
+
+</RelativeLayout>

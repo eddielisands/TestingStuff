@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_water" />
+    
+      <LinearLayout 
+          android:layout_width="286dip"
+          android:layout_height="351dip"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:background="@drawable/box_detail"
+          android:orientation="vertical"/>
+          
+
+</RelativeLayout>

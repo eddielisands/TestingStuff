@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fancl.iloyalty"
+    android:versionCode="1"
+    android:versionName="1.0.1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.fancl.iloyalty.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.fancl.iloyalty.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!-- GCM -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.fancl.iloyalty.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.fancl.iloyalty.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.fancl.iloyalty.AndroidProjectApplication"
+        android:icon="@drawable/fancl_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/activity_anim_zoom" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD2n_nlExg6L85DasA_gIzixPUi-JaEX6U" />
+        <!-- android:value="AIzaSyDeLdp6DQLa5SW9jm2d1h2UMtnMYLQ32Do" /> -->
+        <!-- android:value="AIzaSyD2n_nlExg6L85DasA_gIzixPUi-JaEX6U" /> Joyce-->
+
+        <activity
+            android:name="com.fancl.iloyalty.activity.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.WelcomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- MainTabActivity -->
+
+        <activity
+            android:name="com.fancl.iloyalty.activity.sharing.SharingPanelActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- Custom -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.CustomSpinnerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.advertisement.AdvertisementActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- About Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.about.AboutContactUsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.about.AboutDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.about.AboutHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Beauty Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.beauty.BeautyTipsBriefIntroductionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.beauty.BeautyHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.beauty.BeautyRelatedProductActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.beauty.BeautySearchActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.beauty.BeautyVideoPlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.beauty.BeautyRelatedArticlesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Login Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.LoginFormActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.LoginNonMemberActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.LoginTOSActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.SignUpFormActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.SignUpResultActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.SignUpEnterMemberIDActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.LoginForgetPasswordActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.login.SignUpScanningBarCodeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Menu Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.menu.MenuActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.menu.MenuInboxActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.setting.SettingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.favourite.FavouriteActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.message.MessageHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- MyAccount Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.myaccount.MyAccountChangePasswordActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.myaccount.MyAccountEditFormActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.myaccount.MyAccountGPRewardActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.myaccount.MyAccountHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.myaccount.MyAccountPurchaseRecordActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.myaccount.MyAccountPurchaseRecordDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Product Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductQandAActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductQandAAnsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductRelatedArticlesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductSearchActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductSubCateActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.product.ProductCategoryListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Promotion Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.promotion.PromotionDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.promotion.PromotionHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.promotion.PromotionLuckyDrawDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.promotion.PromotionRelatedArticlesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.promotion.PromotionCheckMyRecordActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Purchase Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.purchase.PurchasePOSCodeDisplayActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.purchase.PurchasePOSCodeEnterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.purchase.PurchasePOSResponseActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.purchase.PurchaseQRCodeScanActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Shop Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.shop.ShopDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.shop.ShopHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.shop.ShopListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.shop.ShopMapActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- Whats Hot Session -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.whatshot.WhatsHotDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.whatshot.WhatsHotHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.whatshot.WhatsHotListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+
+        <!-- QR Code -->
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Detail -->
+        <activity
+            android:name="com.fancl.iloyalty.activity.detail.DetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.detail.YoutubeVideoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.magazine.MagazineHomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.magazine.MagazineFullPageActivity"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.qrscanner.QRCodeScannerActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.sharing.FacebookSharingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.sharing.TwitterSharingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme" >
+        </activity>
+        <activity
+            android:name="com.fancl.iloyalty.activity.sharing.TwitterSharingDialogActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+
+        <!-- For Facebook SDK 3.0 -->
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_applicationId" />
+        <!-- End of Facebook SDK 3.0 -->
+
+
+        <!-- GCM -->
+        <service android:name=".GCMIntentService" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Auto start when device boot completed -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.fancl.iloyalty" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

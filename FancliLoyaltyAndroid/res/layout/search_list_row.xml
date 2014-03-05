@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dip"
+    android:background="@color/White"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/list_bar_bg"
+        android:layout_width="match_parent"
+        android:background="@color/White"
+        android:layout_height="42dip" >
+
+        <com.fancl.iloyalty.item.AsyncImageView
+            android:id="@+id/list_search_thumbnail"
+            android:layout_width="47dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/LightGrey"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/list_search_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/list_search_thumbnail"
+            android:text="text"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/Fancl_LightGrey"
+            android:textSize="14sp" />
+        
+        <RelativeLayout
+        android:id="@+id/list_search_breakline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search_bar" />
+        
+        </RelativeLayout>
+
+   
+
+
+
+</RelativeLayout>

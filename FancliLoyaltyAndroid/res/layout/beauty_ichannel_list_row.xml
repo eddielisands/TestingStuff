@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dip"
+    android:background="@color/Transparent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/list_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="81dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/list_bar" />
+
+    <RelativeLayout
+        android:id="@+id/list_bar_breakline"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/breakline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="93dip"
+                android:layout_height="64dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="8dip" >
+
+                <com.fancl.iloyalty.item.AsyncImageView
+                    android:id="@+id/list_bar_thumbnail"
+                    android:layout_width="93dip"
+                    android:layout_height="64dip"
+                    android:background="@color/LightGrey"
+                    android:scaleType="fitCenter" />
+
+                <RelativeLayout
+                    android:id="@+id/list_bar_new_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ico_new" />
+                
+                <RelativeLayout
+                    android:id="@+id/list_bar_play_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/btn_play" />
+
+                <!--
+                     <RelativeLayout 
+		            android:id="@+id/list_bar_lucky_draw_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:layout_alignParentRight="true"
+		            android:background="@drawable/ico_lucky_draw"/>
+                -->
+
+
+                <!--
+                     <RelativeLayout 
+		            android:id="@+id/list_bar_redeemed_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:layout_alignParentRight="true"
+		            android:background="@drawable/ico_redeemed"/>
+                -->
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/list_bar_description_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="110dip"
+                android:text="簡介xxxxxxxx \n xxxxxxxxxx"
+                android:textColor="@color/Fancl_Blue"
+                android:maxLines="3"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_bar_arrow_btn"
+            android:layout_width="36dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_unread" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

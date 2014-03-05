@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/detail_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/fancl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="#C0C0C0" >
+
+                <TextView
+                    android:id="@+id/row_1_testview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="The establishment of FANCL"
+                    android:textColor="@color/Fancl_Blue" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ico_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/product_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" >
+
+                <TextView
+                    android:id="@+id/row_2_testview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Preservative-free products"
+                    android:textColor="@color/Fancl_Blue" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ico_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/membership_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="#C0C0C0" >
+
+                <TextView
+                    android:id="@+id/row_3_testview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Membership information"
+                    android:textColor="@color/Fancl_Blue" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ico_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contact_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/about_fancl_contact_us"
+                    android:textColor="@color/Fancl_Blue" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ico_more" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

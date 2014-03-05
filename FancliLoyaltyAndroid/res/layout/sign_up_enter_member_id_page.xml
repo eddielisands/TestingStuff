@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/detail_bg" />
+
+    <LinearLayout
+        android:layout_width="294dip"
+        android:layout_height="273dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/sign_up_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/sign_up_title"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_up_welcome_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/sign_up_welcome_title"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_up_hint_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/sign_up_hint_title"
+                android:textColor="@color/blue"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/welcome_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.5" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" >
+
+                    <EditText
+                        android:id="@+id/member_id_edit_text_1"
+                        android:layout_width="40dip"
+                        android:layout_height="42dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:hint="00"
+                        android:gravity="center"
+                        android:ellipsize="start"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:inputType="none|textNoSuggestions"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+
+                    <EditText
+                        android:id="@+id/member_id_edit_text_2"
+                        android:layout_width="100dip"
+                        android:layout_height="42dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:hint="0000000"
+                        android:gravity="center"
+                        android:ellipsize="start"
+                        android:maxLength="7"
+                        android:singleLine="true"
+                        android:inputType="none|textNoSuggestions"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+
+                    <EditText
+                        android:id="@+id/member_id_edit_text_3"
+                        android:layout_width="60dip"
+                        android:layout_height="42dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:hint="0000"
+                        android:gravity="center"
+                        android:ellipsize="start"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:inputType="none|textNoSuggestions"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cancel_confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.5" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="107dip"
+                        android:layout_height="38dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/btn_cancel" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="@string/cancel_btn_title"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/confirm_btn"
+                        android:layout_width="107dip"
+                        android:layout_height="38dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/btn_confirm" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="@string/confirm_btn_title"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

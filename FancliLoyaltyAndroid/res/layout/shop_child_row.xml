@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_row_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/child_row_textview"
+        android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="10dp"
+         android:gravity="center_vertical"
+         android:layout_centerVertical="true"
+         android:text="city"
+         android:textColor="@color/Fancl_Blue"
+         android:textSize="18sp" />
+    
+    <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/ico_arrow" />
+
+</RelativeLayout>
